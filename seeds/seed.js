@@ -1,0 +1,78 @@
+const { Characters } = require("../models");
+const characterdata = [
+  {
+    title: "Spider-Man",
+    durability: "3/7",
+    energy: "1/7",
+    fighting_skills: "4/7",
+    intelligence: "4/7",
+    speed: "3/7",
+    strength: "4/7",
+  },
+  {
+    title: "Iron Man",
+    durability: "6/7",
+    energy: "6/7",
+    fighting_skills: "4/7",
+    intelligence: "6/7",
+    speed: "5/7",
+    strength: "6/7",
+  },
+  {
+    title: "Thor",
+    durability: "6/7",
+    energy: "6/7",
+    fighting_skills: "4/7",
+    intelligence: "2/7",
+    speed: "7/7",
+    strength: "7/7",
+  },
+  {
+    title: "Captain America",
+    durability: "3/7",
+    energy: "1/7",
+    fighting_skills: "6/7",
+    intelligence: "3/7",
+    speed: "2/7",
+    strength: "3/7",
+  },
+  {
+    title: "Doctor Strange",
+    durability: "3/7",
+    energy: "6/7",
+    fighting_skills: "3/7",
+    intelligence: "4/7",
+    speed: "7/7",
+    strength: "2/7",
+  },
+  {
+    title: "Human Torch",
+    durability: "4/7",
+    energy: "6/7",
+    fighting_skills: "4/7",
+    intelligence: "4/7",
+    speed: "5/7",
+    strength: "4/7",
+  },
+  {
+    title: "Deadpool",
+    durability: "4/7",
+    energy: "1/7",
+    fighting_skills: "6/7",
+    intelligence: "2/7",
+    speed: "7/7",
+    strength: "4/7",
+  },
+  {
+    title: "Iron Man",
+    durability: "6/7",
+    energy: "6/7",
+    fighting_skills: "4/7",
+    intelligence: "6/7",
+    speed: "5/7",
+    strength: "6/7",
+  },
+  // Add more characters here using the same format
+];
+const seedCharacters = () => Characterdata.bulkCreate(paintingdata);
+module.exports = seedCharacters;
