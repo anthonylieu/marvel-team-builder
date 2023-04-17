@@ -2,37 +2,59 @@ const { Model, DataTypes } = require("sequelize");
 const bcrypt = require("bcrypt");
 const sequelize = require("../config/connection");
 
-class User extends Model {
+class Characters extends Model {
   checkPassword(loginPw) {
     return bcrypt.compareSync(loginPw, this.password);
   }
 }
 
-User.init(
+Characters.init(
   {
-    id: {
+    title: {
       type: DataTypes.STRING,
       allowNull: false,
       primaryKey: true,
     },
-    name: {
-      type: DataTypes.STRING,
+    durability: {
+      type: DataTypes.INTERGER,
       allowNull: false,
-    },
-    email: {
-      type: DataTypes.STRING,
-      allowNull: false,
-      unique: true,
       validate: {
-        isEmail: true,
+        max: 7,
       },
     },
-    password: {
-      type: DataTypes.STRING,
+    energy: {
+      type: DataTypes.INTERGER,
       allowNull: false,
       validate: {
-        len: [8],
-        isAlphanumeric: true,
+        max: 7,
+      },
+    },
+    fighting_skills: {
+      type: DataTypes.INTERGER,
+      allowNull: false,
+      validate: {
+        max: 7,
+      },
+    },
+    intelligence: {
+      type: DataTypes.INTERGER,
+      allowNull: false,
+      validate: {
+        max: 7,
+      },
+    },
+    speed: {
+      type: DataTypes.INTERGER,
+      allowNull: false,
+      validate: {
+        max: 7,
+      },
+    },
+    strength: {
+      type: DataTypes.INTERGER,
+      allowNull: false,
+      validate: {
+        max: 7,
       },
     },
   },
@@ -47,7 +69,7 @@ User.init(
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: "user",
+    modelName: "Character",
   }
 );
 
