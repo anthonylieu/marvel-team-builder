@@ -110,5 +110,9 @@ const charactersdata = [
   },
   // Add more characters here using the same format
 ];
-const seedCharacters = () => Charactersdata.bulkCreate(charactersdata);
+const seedCharacters = async () => {
+  await Characters.sync();
+  await Characters.bulkCreate(charactersData);
+};
+
 module.exports = seedCharacters;
