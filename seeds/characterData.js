@@ -1,5 +1,5 @@
 const { Characters } = require("../models");
-const characterdata = [
+const charactersdata = [
   {
     title: "Spider-Man",
     durability: "3/7",
@@ -110,5 +110,5 @@ const characterdata = [
   },
   // Add more characters here using the same format
 ];
-const seedCharacters = () => Characterdata.bulkCreate(paintingdata);
+const seedCharacters = () => Charactersdata.bulkCreate(charactersdata);
 module.exports = seedCharacters;
