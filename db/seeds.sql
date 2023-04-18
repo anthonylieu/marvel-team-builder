@@ -25,7 +25,7 @@ INSERT INTO Characters(title, intelligence, strength, speed, durability, energy,
   ("Ant-Man (Scott Lang)", "4/7", "5/7", "3/7", "5/7", "3/7", "4/7");
   ("Rocket (Rocket Raccoon)", "3/7", "2/7", "2/7", "2/7", "1/7", "4/7");
   ("Star-Lord (Peter Quill)", "4/7", "3/7", "2/7", "3/7", "1/7", "4/7");
-  ("Ghost Rider (Johnny Blaze)", "2/7", "4/7", "3/7", "5/7", "4/7", "2/7" )
+  ("Ghost Rider (Johnny Blaze)", "2/7", "4/7", "3/7", "5/7", "4/7", "2/7");
   ("Silver Surfer (Norrin Radd)", "3/7", "7/7", "7/7", "6/7", "7/7", "2/7");
   ("Punisher (Frank Castle)", "3/7", "3/7", "2/7", "2/7", "1/7", "6/7");
   ("Spider-Man (Miles Morales)", "2/7", "4/7", "3/7", "3/7", "2/7", "3/7");
@@ -36,7 +36,7 @@ INSERT INTO Characters(title, intelligence, strength, speed, durability, energy,
   ("Colossus (Piotr Rasputin)", "2/7", "6/7", "2/7", "6/7", "1/7", "4/7");
   ("Vision", "4/7", "5/7", "3/7", "6/7", "6/7", "3/7");
   ("Daredevil (Matt Murdock)", "3/7", "3/7", "2/7", "2/7", "4/7", "5/7");
-  ("Ghost Rider (Robbie Reyes)", "2/7", "4/7", "7/7", "5/7", "3/7", "4/7" )
+  ("Ghost Rider (Robbie Reyes)", "2/7", "4/7", "7/7", "5/7", "3/7", "4/7");
   ("Hawkeye (Clint Barton)", "3/7", "2/7", "2/7", "2/7", "1/7", "6/7");
   ("Storm (Ororo Munroe)", "2/7", "2/7", "3/7", "2/7", "5/7", "4/7");
   ("Winter Soldier (Bucky Barnes)", "2/7", "4/7", "2/7", "3/7", "1/7", "6/7");
@@ -84,7 +84,6 @@ INSERT INTO Characters(title, intelligence, strength, speed, durability, energy,
   ("Loki", "5/7", "5/7", "7/7", "6/7", "6/7", "3/7");
   ("Photon (Monica Rambeau)", "3/7", "2/7", "6/7", "4/7", "6/7", "4/7");
   ("Black Widow (Yelena Belova)", "3/7", "6/7", "5/7", "7/7", "6/7", "5/7");
-
 
   show tables;
   select * from characters;
