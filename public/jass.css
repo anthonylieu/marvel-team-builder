@@ -288,3 +288,21 @@ a :hover {
 
 .spiderman {
   background-image: url('spider-man.webp');}
+
+/* ====Team Page Exclusive CSS ==== */
+
+.searchbar {
+    width: 570px;
+    height: 90px;
+    right: 150px;
+}
+
+.searchbar input {
+    width: 460px;
+    height: 90px;
+}
+
+.search {
+    width: 90px;
+    height: 90px;
+}
