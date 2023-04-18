@@ -21,27 +21,27 @@ VALUES
   ("Captain America (Steve Rogers)", "3/7", "3/7", "2/7", "3/7", "1/7", "6/7"),
   ("Black Panther (T'Challa)", "5/7", "3/7", "2/7", "3/7", "3/7", "5/7"),
   ("Scarlet Witch (Wanda Maximoff)", "3/7", "2/7", "2/7", "2/7", "6/7", "3/7"),
-  ("Black Widow (Natalia Romanova)", "3/7", "3/7", "2/7", "3/7", "3/7", "6/7");
-  ("Groot", "3/7", "7/7", "3/7", "4/7", "3/7", "4/7");
-  ("Ant-Man (Scott Lang)", "4/7", "5/7", "3/7", "5/7", "3/7", "4/7");
-  ("Rocket (Rocket Raccoon)", "3/7", "2/7", "2/7", "2/7", "1/7", "4/7");
-  ("Star-Lord (Peter Quill)", "4/7", "3/7", "2/7", "3/7", "1/7", "4/7");
-  ("Ghost Rider (Johnny Blaze)", "2/7", "4/7", "3/7", "5/7", "4/7", "2/7" )
-  ("Silver Surfer (Norrin Radd)", "3/7", "7/7", "7/7", "6/7", "7/7", "2/7");
-  ("Punisher (Frank Castle)", "3/7", "3/7", "2/7", "2/7", "1/7", "6/7");
-  ("Spider-Man (Miles Morales)", "2/7", "4/7", "3/7", "3/7", "2/7", "3/7");
-  ("Professor X (Charles Xavier)", "5/7", "2/7", "2/7", "2/7", "5/7", "3/7");
-  ("Phoenix (Jean Grey)", "3/7", "2/7", "7/7", "7/7", "7/7", "4/7");
-  ("Gambit (Remy LeBeau)", "2/7", "2/7", "2/7", "2/7", "2/7", "4/7");
-  ("Nightcrawler (Kurt Wagner)", "3/7", "2/7", "7/7", "2/7", "1/7", "3/7");
-  ("Colossus (Piotr Rasputin)", "2/7", "6/7", "2/7", "6/7", "1/7", "4/7");
-  ("Vision", "4/7", "5/7", "3/7", "6/7", "6/7", "3/7");
-  ("Daredevil (Matt Murdock)", "3/7", "3/7", "2/7", "2/7", "4/7", "5/7");
-  ("Ghost Rider (Robbie Reyes)", "2/7", "4/7", "7/7", "5/7", "3/7", "4/7" )
-  ("Hawkeye (Clint Barton)", "3/7", "2/7", "2/7", "2/7", "1/7", "6/7");
-  ("Storm (Ororo Munroe)", "2/7", "2/7", "3/7", "2/7", "5/7", "4/7");
-  ("Winter Soldier (Bucky Barnes)", "2/7", "4/7", "2/7", "3/7", "1/7", "6/7");
-  ("Moon Knight (Marc Spector)", "2/7", "3/7", "2/7", "3/7", "1/7", "4/7");
+  ("Black Widow (Natalia Romanova)", "3/7", "3/7", "2/7", "3/7", "3/7", "6/7"),
+  ("Groot", "3/7", "7/7", "3/7", "4/7", "3/7", "4/7"),
+  ("Ant-Man (Scott Lang)", "4/7", "5/7", "3/7", "5/7", "3/7", "4/7"),
+  ("Rocket (Rocket Raccoon)", "3/7", "2/7", "2/7", "2/7", "1/7", "4/7"),
+  ("Star-Lord (Peter Quill)", "4/7", "3/7", "2/7", "3/7", "1/7", "4/7"),
+  ("Ghost Rider (Johnny Blaze)", "2/7", "4/7", "3/7", "5/7", "4/7", "2/7" ),
+  ("Silver Surfer (Norrin Radd)", "3/7", "7/7", "7/7", "6/7", "7/7", "2/7"),
+  ("Punisher (Frank Castle)", "3/7", "3/7", "2/7", "2/7", "1/7", "6/7"),
+  ("Spider-Man (Miles Morales)", "2/7", "4/7", "3/7", "3/7", "2/7", "3/7"),
+  ("Professor X (Charles Xavier)", "5/7", "2/7", "2/7", "2/7", "5/7", "3/7"),
+  ("Phoenix (Jean Grey)", "3/7", "2/7", "7/7", "7/7", "7/7", "4/7"),
+  ("Gambit (Remy LeBeau)", "2/7", "2/7", "2/7", "2/7", "2/7", "4/7"),
+  ("Nightcrawler (Kurt Wagner)", "3/7", "2/7", "7/7", "2/7", "1/7", "3/7"),
+  ("Colossus (Piotr Rasputin)", "2/7", "6/7", "2/7", "6/7", "1/7", "4/7"),
+  ("Vision", "4/7", "5/7", "3/7", "6/7", "6/7", "3/7"),
+  ("Daredevil (Matt Murdock)", "3/7", "3/7", "2/7", "2/7", "4/7", "5/7"),
+  ("Ghost Rider (Robbie Reyes)", "2/7", "4/7", "7/7", "5/7", "3/7", "4/7"),
+  ("Hawkeye (Clint Barton)", "3/7", "2/7", "2/7", "2/7", "1/7", "6/7"),
+  ("Storm (Ororo Munroe)", "2/7", "2/7", "3/7", "2/7", "5/7", "4/7"),
+  ("Winter Soldier (Bucky Barnes)", "2/7", "4/7", "2/7", "3/7", "1/7", "6/7"),
+  ("Moon Knight (Marc Spector)", "2/7", "3/7", "2/7", "3/7", "1/7", "4/7"),
   ("Human Torch (Johnny Storm)", "2/7", "2/7", "5/7", "6/7", "5/7", "3/7"),
   ("Blade (Eric Brooks)", "2/7", "4/7", "2/7", "4/7", "1/7", "5/7"),
   ("The Thing (Ben Grimm)", "3/7", "6/7", "2/7", "6/7", "1/7", "5/7"),
@@ -89,5 +89,3 @@ VALUES
 
   show tables;
   select * from characters;
-
-
