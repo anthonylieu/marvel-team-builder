@@ -6,7 +6,7 @@ body {
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
-  background: linear-gradient(45deg, #a547b1, #f84298) center;
+  background: linear-gradient(45deg, #A547B1, #F84298) center;
   background-size: 100vw 100vh;
   height: 100vh;
   display: flex;
@@ -16,12 +16,11 @@ body {
 }
 * {
   box-sizing: border-box;
-  ::before,
-  ::after {
-    box-sizing: border-box;
-  }
 }
-
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 .login {
   width: 340px;
   height: 400px;
@@ -30,221 +29,204 @@ body {
   padding: 30px;
   position: relative;
   display: flex;
-  .form_wrapper {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    overflow: hidden;
-    .tile {
-      text-align: center;
-      margin-bottom: 20px;
-      width: 100%;
-      overflow: hidden;
-      h3 {
-        font-size: 22px;
-        margin: 0px;
-        transition: all 0.3s ease;
-      }
-    }
-    .radio {
-      display: none;
-    }
-    .tab {
-      width: 50%;
-      border: solid 2px #f1f1f1;
-      height: 40px;
-      border-radius: 5px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 16px;
-      margin-bottom: 20px;
-      font-weight: 500;
-      transition: color 0.3s ease;
-      user-select: none;
-      &.login_tab {
-        border-right: none;
-        border-top-right-radius: 0px;
-        border-bottom-right-radius: 0px;
-      }
-      &.signup_tab {
-        border-left: none;
-        border-top-left-radius: 0px;
-        border-bottom-left-radius: 0px;
-      }
-    }
-    .shape {
-      background: linear-gradient(45deg, #a547b1, #f84298) no-repeat center;
-      width: 50%;
-      height: calc(40px - 1px);
-      border-radius: 5px;
-      position: absolute;
-      top: 55.5px;
-      left: 0px;
-      opacity: 0.9;
-      transition: all 0.4s ease;
-      &:hover {
-        background: linear-gradient(-45deg, #a547b1, #f84298) no-repeat center;
-      }
-    }
-    #login {
-      &:checked ~ {
-        .shape {
-          left: 0px;
-        }
-        .login_tab {
-          border-color: transparent;
-          z-index: 1;
-          color: white;
-        }
-        .tile {
-          .signup {
-            display: none;
-          }
-        }
-        .form_wrap {
-          transform: translateX(0);
-          .signup_form {
-            opacity: 0;
-          }
-        }
-      }
-    }
-    #signup {
-      &:checked ~ {
-        .shape {
-          left: 50%;
-        }
-        .signup_tab {
-          border-color: transparent;
-          z-index: 1;
-          color: white;
-        }
-        .tile {
-          .login {
-            display: none;
-          }
-        }
-        .form_wrap {
-          transform: translateX(-100%);
-          .login_form {
-            opacity: 0;
-          }
-        }
-      }
-    }
-    a {
-      color: #f84298;
-      text-decoration: none;
-      transition: all 0.3s linear;
-      &:hover {
-        color: #a547b1;
-      }
-    }
-    .form_wrap {
-      display: flex;
-      width: 100%;
-      flex: 0 0 100%;
-      transition: transform 0.3s ease, opacity 0.2s ease;
-
-      .form_fild {
-        width: 100%;
-        flex: 0 0 100%;
-        transition: all 0.5s ease;
-        .input_group {
-          width: 100%;
-          margin-bottom: 12px;
-          .input {
-            border: solid #f1f1f1 2px;
-            border-radius: 5px;
-            width: 100%;
-            height: 40px;
-            padding: 5px 10px;
-            font-size: 15px;
-            font-weight: 500;
-            outline: none;
-            transition: all 0.3s linear;
-            &::placeholder {
-              color: rgb(173, 173, 173);
-            }
-            &:hover {
-              border-color: rgba(248, 66, 151, 0.3);
-            }
-            &:focus {
-              border-color: rgba(248, 66, 151, 0.3);
-            }
-          }
-        }
-        .forgot {
-          display: block;
-          margin-bottom: 15px;
-          padding: 0px 2px;
-        }
-        .btn {
-          width: 100%;
-          height: 40px;
-          margin-bottom: 20px;
-          border: none;
-          outline: none;
-          font-size: 16px;
-          font-weight: 500;
-          letter-spacing: 0.8px;
-          color: white;
-          background: linear-gradient(45deg, #a547b1, #f84298) no-repeat center;
-          border-radius: 5px;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          transition: all 0.3s linear;
-          &:hover {
-            background: linear-gradient(-45deg, #a547b1, #f84298) no-repeat
-              center;
-          }
-          &:active {
-            transform: scale(0.95);
-          }
-        }
-        .not_mem {
-          text-align: center;
-          label {
-            pointer-events: none;
-            span {
-              pointer-events: all;
-              color: #f84298;
-              text-decoration: none;
-              transition: all 0.3s linear;
-              &:hover {
-                color: #a547b1;
-              }
-            }
-          }
-        }
-      }
-    }
-  }
 }
-
+.login .form_wrapper {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+.login .form_wrapper .tile {
+  text-align: center;
+  margin-bottom: 20px;
+  width: 100%;
+  overflow: hidden;
+}
+.login .form_wrapper .tile h3 {
+  font-size: 22px;
+  margin: 0px;
+  transition: all 0.3s ease;
+}
+.login .form_wrapper .radio {
+  display: none;
+}
+.login .form_wrapper .tab {
+  width: 50%;
+  border: solid 2px #F1F1F1;
+  height: 40px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  margin-bottom: 20px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  user-select: none;
+}
+.login .form_wrapper .tab.login_tab {
+  border-right: none;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+.login .form_wrapper .tab.signup_tab {
+  border-left: none;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+.login .form_wrapper .shape {
+  background: linear-gradient(45deg, #A547B1, #F84298) no-repeat center;
+  width: 50%;
+  height: calc(40px - 1px);
+  border-radius: 5px;
+  position: absolute;
+  top: 55.5px;
+  left: 0px;
+  opacity: 0.9;
+  transition: all 0.4s ease;
+}
+.login .form_wrapper .shape:hover {
+  background: linear-gradient(-45deg, #A547B1, #F84298) no-repeat center;
+}
+.login #login:checked ~ .form_wrapper .shape {
+  left:
+0px;
+}
+.login #login:checked ~ .form_wrapper .login_tab {
+  border-color: transparent;
+  z-index: 1;
+  color: white;
+}
+.login #login:checked ~ .form_wrapper .tile .signup {
+  display: none;
+}
+.login #login:checked ~ .form_wrapper .form_wrap {
+  transform: translateX(0);
+}
+.login #login:checked ~ .form_wrapper .form_wrap .signup_form {
+  opacity: 0;
+}
+.login #signup:checked ~ .form_wrapper .shape {
+  left: 50%;
+}
+.login #signup:checked ~ .form_wrapper .signup_tab {
+  border-color: transparent;
+  z-index: 1;
+  color: white;
+}
+.login #signup:checked ~ .form_wrapper .tile .login {
+  display: none;
+}
+.login #signup:checked ~ .form_wrapper .form_wrap {
+  transform: translateX(-100%);
+}
+.login #signup:checked ~ .form_wrapper .form_wrap .login_form {
+  opacity: 0;
+}
+.login .form_wrapper a {
+  color: #F84298;
+  text-decoration: none;
+  transition: all 0.3s linear;
+}
+.login .form_wrapper a:hover {
+  color: #A547B1;
+}
+.login .form_wrapper .form_wrap {
+  display: flex;
+  width: 100%;
+  flex: 0 0 100%;
+  transition: transform 0.3s ease, opacity 0.2s ease;
+}
+.login .form_wrapper .form_wrap .form_fild {
+  width: 100%;
+  flex: 0 0 100%;
+  transition: all 0.5s ease;
+}
+.login .form_wrapper .form_wrap .form_fild .input_group {
+  width: 100%;
+  margin-bottom: 12px;
+}
+.login .form_wrapper .form_wrap .form_fild .input_group .input {
+  border: solid #F1F1F1 2px;
+  border-radius: 5px;
+  width: 100%;
+  height: 40px;
+  padding: 5px 10px;
+  font-size: 15px;
+  font-weight: 500;
+  outline: none;
+  transition: all 0.3s linear;
+}
+.login .form_wrapper .form_wrap .form_fild .input_group .input::placeholder {
+  color: rgb(173, 173, 173);
+}
+.login .form_wrapper .form_wrap .form_fild .input_group .input:hover {
+  border-color: rgba(248, 66, 151, 0.3);
+}
+.login .form_wrapper .form_wrap .form_fild .input_group .input:focus {
+  border-color: rgba(248, 66, 151, 0.3);
+}
+.login .form_wrapper .form_wrap .form_fild .forgot {
+  display: block;
+  margin-bottom: 15px;
+  padding: 0px 2px;
+}
+.login .form_wrapper .form_wrap .form_fild .btn {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 20px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.8px;
+  color: white;
+  background: linear-gradient(45deg, #A547B1, #F84298) no-repeat center;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s linear;
+.login .form_wrapper .form_wrap .form_fild .btn:hover {
+  background: linear-gradient(-45deg, #A547B1, #F84298) no-repeat center;
+}
+.login .form_wrapper .form_wrap .form_fild .btn:active {
+  transform: scale(0.95);
+}
+.login .form_wrapper .form_wrap .form_fild .not_mem {
+  text-align: center;
+}
+.login .form_wrapper .form_wrap .form_fild .not_mem label {
+  pointer-events: none;
+}
+.login .form_wrapper .form_wrap .form_fild .not_mem label span {
+  pointer-events: all;
+  color: #F84298;
+  text-decoration: none;
+  transition: all 0.3s linear;
+}
+.login .form_wrapper .form_wrap .form_fild .not_mem label span:hover {
+  color: #A547B1;
+}
 .character-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 1em;
 }
-
 .character {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
 .name {
   margin-top: 0.5em;
   font-size: 1.2em;
   font-weight: bold;
   text-align: center;
 }
-
 .spiderman {
-  background-image: url('spider-man.webp');}
+  background-image: url('spider-man.webp');
+}
