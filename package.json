@@ -20,7 +20,9 @@
     "express-session": "^1.17.1",
     "handlebars": "^4.7.6",
     "md5": "^2.3.0",
+    "mysql": "^2.18.1",
     "mysql2": "^2.2.5",
+    "node": "^19.8.1",
     "sequelize": "^6.3.5"
   },
   "devDependencies": {
