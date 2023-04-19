@@ -1,5 +1,6 @@
 const express = require("express");
 const router = express.Router();
+
 const sequelize = require("../config/connection");
 
 // Get all characters
@@ -24,5 +25,7 @@ router.get("/characters/:id", async (req, res) => {
     res.status(500).json({ message: "Error retrieving character" });
   }
 });
-
+router.get('/', (req, res) => {
+  res.render("homepage")
+});
 module.exports = router;
