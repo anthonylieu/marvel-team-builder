@@ -2,12 +2,12 @@ USE marvelteam_db;
 CREATE TABLE Characters (
   id INT PRIMARY KEY AUTO_INCREMENT,
   title VARCHAR(255),
-  intelligence VARCHAR(10),
-  strength VARCHAR(10),
-  speed VARCHAR(10),
-  durability VARCHAR(10),
-  energy VARCHAR(10),
-  fighting_skills VARCHAR(10)
+  intelligence VARCHAR(3),
+  strength VARCHAR(3),
+  speed VARCHAR(3),
+  durability VARCHAR(3),
+  energy VARCHAR(3),
+  fighting_skills VARCHAR(3)
 );
 INSERT INTO Characters(title, intelligence, strength, speed, durability, energy, fighting_skills)
 VALUES 

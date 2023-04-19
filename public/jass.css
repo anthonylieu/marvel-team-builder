@@ -1,11 +1,23 @@
+:root {
+    --marvel: #EC1D24;
+    --white: #fff;
+    --off-white: #eeeeee;
+    --black: #000000;
+    --off-black: #222;
+    --off-black2: #222;
+    --grey: #838383;
+    --marvel_text: 'Marvel', sans-serif;
+
+}
+
 body {
-  font-family: 'Marvel', sans-serif;
+  font-family: var(--marvel_text);
   font-size: 14px;
-  color: #222;
+  color: var(--off-black);
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
-  background: linear-gradient(45deg, #292929, #838383) center;
+  background: linear-gradient(45deg,var(--off-black2), var(--grey)) center;
   background-size: 100vw 100vh;
   height: 100vh;
   display: flex;
@@ -20,27 +32,27 @@ nav {
     width: 100vw;
     height: 100px;
     background-color: black;
-    font-family: 'Marvel', sans-serif;
+    font-family: var(--marvel_text);
     z-index: 1;
 }
 
 h1 {
     width: 300px;
-    background-color: #EC1D24;
+    background-color: var(--marvel);
     text-align: center;
     vertical-align: center;
-    color: #fff;
+    color: var(--white);
     font-size: 2.5em;
     line-height: 2em;
     font-weight: 900;
-    font-family: 'Marvel', sans-serif;
+    font-family: var(--marvel_text);
     margin: 15px;
     z-index: 2;
 }
 
-main img {
+main .background-image {
     position: fixed;
-    top: 0px;
+    top: -200px;
     left: 0px;
     width: 100vw;
     opacity: 50%;
@@ -50,11 +62,11 @@ main img {
 .form {
     z-index: 1;
     align-items: center;
-    font-family: 'Marvel', sans-serif;
+    font-family: var(--marvel_text);
 }
 
 .form h3 {
-    color: #fff;
+    color: var(--white);
     text-align: center;
     margin: 10px;
     font-size: 2.5em;
@@ -71,12 +83,12 @@ main img {
 }
 
 .login_wrapper {
-    background-color: #222;
+    background-color: var(--off-black);
     border-radius: 50px 0px 0px 50px;
 }
 
 .signup_wrapper {
-    background-color: #222;
+    background-color: var(--off-black);
     border-radius: 0px 50px 50px 0px;
 }
 
@@ -88,6 +100,7 @@ main img {
 .input_group input {
     border-radius: 25px;
     margin: 5px;
+    text-align: center;
 }
 
 .btn {
@@ -97,12 +110,12 @@ main img {
     width: 80px;
     height: 20px;
     border-radius: 15px;
-    font-family: 'Marvel', sans-serif;
+    font-family: var(--marvel_text)
 }
 
 /* ==== ==== */
 
-.character-grid {
+/* .character-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 1em;
@@ -122,14 +135,16 @@ main img {
 }
 
 .spiderman {
-  background-image: url('spider-man.webp');}
+  background-image: url('spider-man.webp');} */
 
-/* ====Team Page Exclusive CSS ==== */
+/* ==== Team Page Exclusive CSS ==== */
 
 .searchbar {
+    position: fixed;
     width: 570px;
     height: 90px;
-    right: 150px;
+    top: 120px;
+    right: 40px;
 }
 
 .searchbar input {
@@ -141,3 +156,29 @@ main img {
     width: 90px;
     height: 90px;
 }
+
+.team_block {
+    position: fixed;
+    background-color: var(--off-white);
+    bottom: 0px;
+    width: 100vw;
+    height: 40vh;
+}
+
+
+/* ==== Character Page Exclusive CSS ==== */
+
+/* img {
+    width: 50px;
+    height: 50px;
+} */
+
+.logout {
+    background-color: #EC1D24;
+}
+
+.search {
+    display: flex;
+    border-radius: 0px 15px 15px 0px;
+}
+
