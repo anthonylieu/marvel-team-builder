@@ -1,17 +1,17 @@
-const express = require('express');
+const express = require("express");
 const router = express.Router();
-const mysql = require('mysql');
+const mysql = require("mysql");
 
 const connection = mysql.createConnection({
-  host: 'localhost',
-  user: 'anthonylieu',
-  password: 'password',
-  database: 'marvelteam_db'
+  host: "localhost",
+  user: "anthonylieu",
+  password: "password",
+  database: "marvelteam_db",
 });
 
 // Get all characters
-router.get('/characters', (req, res) => {
-  const sql = 'SELECT * FROM Characters';
+router.get("/characters", (req, res) => {
+  const sql = "SELECT * FROM Characters";
   connection.query(sql, (err, results) => {
     if (err) throw err;
     res.json(results);
@@ -19,7 +19,7 @@ router.get('/characters', (req, res) => {
 });
 
 // Get a character by ID
-router.get('/characters/:id', (req, res) => {
+router.get("/characters/:id", (req, res) => {
   const { id } = req.params;
   const sql = `SELECT * FROM Characters WHERE id = ${id}`;
   connection.query(sql, (err, result) => {
