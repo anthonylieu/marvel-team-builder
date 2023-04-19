@@ -1,29 +1,35 @@
 <body>
-  <nav class="">
-    <h1>MARVEL TEAM BUILDER</h1>
-  </nav>
-  <img src="{{image_route}}" alt="{{description}}" />
-  <main class="stat_wrapper">
-    <div class="chart">{{intelligence}}</div>
+    <nav class="">
+        <h1>MARVEL TEAM BUILDER</h1>
+    </nav>
+    <img src="{{image_route}}" alt="{{description}}" />
+
+    {{!-- <div class="chart">{{intelligence}}</div>
     <div class="chart">{{strength}}</div>
     <div class="chart">{{speed}}</div>
     <div class="chart">{{durability}}</div>
     <div class="chart">{{energy}}</div>
-    <div class="chart">{{fighting_skills}}</div>
-  </main>
-  <section class="searchbar">
-    <input type="text" />
-    <button class="search"><img
-        src="./public/images/ui_assets/search.png"
-        alt="search"
-      /></button>
-  </section>
-  <div class="characters-container">
-    {{#each characters}}
-      <div class="character">
-        <h2>{{name}}</h2>
-        <img src="{{image}}" alt="{{name}}" />
-      </div>
-    {{/each}}
-  </div>
+    <div class="chart">{{fighting_skills}}</div> --}}
+
+    <section class="searchbar">
+        <input type="text" />
+        <button class="search"><img src="/images/ui_assets/search.png" alt="search" /></button>
+    </section>
+    <main class="stat_wrapper">
+        <div class="characters-container">
+            {{#each characters as |character|}}
+            <div class="character">
+                <h2>{{character.title}}</h2>
+                <img src="{{character.image}}" alt="{{character.title}}" />
+                <div class="chart">{{character.intelligence}}</div>
+                <div class="chart">{{character.strength}}</div>
+                <div class="chart">{{character.speed}}</div>
+                <div class="chart">{{character.durability}}</div>
+                <div class="chart">{{character.energy}}</div>
+                <div class="chart">{{character.fighting_skills}}</div>
+                {{!-- <img src="{{image}}" alt="{{name}}" /> --}}
+            </div>
+            {{/each}}
+        </div>
+    </main>
 </body>

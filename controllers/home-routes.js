@@ -32,9 +32,6 @@ router.get('/', (req, res) => {
 });
 
 // Render the character-sheet
-router.get("/character-sheet", (req, res) => {
-  // Replace 'characters' with actual data you want to pass to the template
-  res.render("character-sheet", { characters: [] });
-});
+
 
 module.exports = router;
