@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
-
 const sequelize = require("../config/connection");
+const Character = require('../models/Characters'); // Import your Sequelize model
 
 // Get all characters
 router.get("/characters", async (req, res) => {
@@ -25,7 +25,22 @@ router.get("/characters/:id", async (req, res) => {
     res.status(500).json({ message: "Error retrieving character" });
   }
 });
-router.get('/', (req, res) => {
-  res.render("homepage")
+
+// Get character sheet
+router.get("/character-sheet", async (req, res) => {
+  try {
+    const charactersData = await Character.findAll();
+    const characters = charactersData.map((character) => character.get({ plain: true }));
+
+    res.render("character-sheet", { characters });
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({ message: "Error retrieving character sheet" });
+  }
 });
+
+router.get('/', (req, res) => {
+  res.render("homepage");
+});
+
 module.exports = router;
