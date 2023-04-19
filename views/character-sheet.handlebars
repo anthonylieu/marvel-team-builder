@@ -14,15 +14,15 @@
   <section class="searchbar">
     <input type="text" />
     <button class="search"><img
-        src="./public/images/ui_assets/search.png"
+        src="/images/ui_assets/search.png"
         alt="search"
       /></button>
   </section>
   <div class="characters-container">
-    {{#each characters}}
+    {{#each characters as |character|}}
       <div class="character">
-        <h2>{{name}}</h2>
-        <img src="{{image}}" alt="{{name}}" />
+        <h2>{{character.title}}</h2>
+        {{!-- <img src="{{image}}" alt="{{name}}" /> --}}
       </div>
     {{/each}}
   </div>
