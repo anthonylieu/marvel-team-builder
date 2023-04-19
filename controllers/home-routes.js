@@ -4,8 +4,8 @@ const mysql = require('mysql');
 
 const connection = mysql.createConnection({
   host: 'localhost',
-  user: 'anthonylieu',
-  password: 'password',
+  user: 'root',
+  password: 'rootroot',
   database: 'marvelteam_db'
 });
 
@@ -27,5 +27,7 @@ router.get('/characters/:id', (req, res) => {
     res.json(result[0]);
   });
 });
-
+router.get('/', (req, res) => {
+  res.render("homepage")
+});
 module.exports = router;
