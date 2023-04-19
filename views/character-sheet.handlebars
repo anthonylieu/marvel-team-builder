@@ -1,12 +1,19 @@
-
-
 <body>
-    <div class="characters-container">
-        {{#each characters}}
-            <div class="character">
-                <h2>{{name}}</h2>
-                <img src="{{image}}" alt="{{name}}">
-            </div>
-        {{/each}}
-    </div>
+    <nav class="">
+        <h1>MARVEL TEAM BUILDER</h1>
+    </nav>
+    <img src="{{image_route}}" alt="{{description}}">
+    <main class="stat_wrapper">
+        <div class="chart">{{intelligence}}</div>
+        <div class="chart">{{strength}}</div>
+        <div class="chart">{{speed}}</div>
+        <div class="chart">{{durability}}</div>
+        <div class="chart">{{energy}}</div>
+        <div class="chart">{{fighting_skills}}</div>
+    </section>
+    </main>
+    <section class="searchbar">
+        <input type="text">
+        <button class="search"><img src="./public/images/ui_assets/search.png" alt="search"></button>
+    </section>
 </body>
