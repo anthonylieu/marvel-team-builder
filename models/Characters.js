@@ -16,42 +16,42 @@ Characters.init(
       primaryKey: true,
     },
     durability: {
-      type: DataTypes.INTERGER,
+      type: DataTypes.INTEGER,
       allowNull: false,
       validate: {
         max: 7,
       },
     },
     energy: {
-      type: DataTypes.INTERGER,
+      type: DataTypes.INTEGER,
       allowNull: false,
       validate: {
         max: 7,
       },
     },
     fighting_skills: {
-      type: DataTypes.INTERGER,
+      type: DataTypes.INTEGER,
       allowNull: false,
       validate: {
         max: 7,
       },
     },
     intelligence: {
-      type: DataTypes.INTERGER,
+      type: DataTypes.INTEGER,
       allowNull: false,
       validate: {
         max: 7,
       },
     },
     speed: {
-      type: DataTypes.INTERGER,
+      type: DataTypes.INTEGER,
       allowNull: false,
       validate: {
         max: 7,
       },
     },
     strength: {
-      type: DataTypes.INTERGER,
+      type: DataTypes.INTEGER,
       allowNull: false,
       validate: {
         max: 7,
@@ -60,9 +60,12 @@ Characters.init(
   },
   {
     hooks: {
-      beforeCreate: async (newUserData) => {
-        newUserData.password = await bcrypt.hash(newUserData.password, 10);
-        return newUserData;
+      beforeCreate: async (newCharacterData) => {
+        newCharacterData.password = await bcrypt.hash(
+          newCharacterData.password,
+          10
+        );
+        return newCharacterData;
       },
     },
     sequelize,
@@ -73,4 +76,4 @@ Characters.init(
   }
 );
 
-module.exports = User;
+module.exports = Characters;

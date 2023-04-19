@@ -7,11 +7,13 @@ CREATE TABLE Characters (
   speed VARCHAR(3),
   durability VARCHAR(3),
   energy VARCHAR(3),
-  fighting_skills VARCHAR(3)
+  fighting_skills VARCHAR(3),
+  image VARCHAR(255)
 );
-INSERT INTO Characters(title, intelligence, strength, speed, durability, energy, fighting_skills)
+
+INSERT INTO Characters(title, intelligence, strength, speed, durability, energy, fighting_skills, image)
 VALUES 
-  ("Spider-Man (Peter Parker)", "4/7", "4/7", "3/7", "3/7", "1/7", "4/7"),
+  ("Spider-Man (Peter Parker)", "4/7", "4/7", "3/7", "3/7", "1/7", "4/7", "spider-man.webp"),
   ("Thor (Thor Odinson)", "2/7", "7/7", "7/7", "6/7", "6/7", "4/7"),
   ("Doctor Strange (Stephen Strange)", "4/7", "2/7", "7/7", "2/7", "6/7", "6/7"),
   ("Deadpool (Wade Wilson)", "2/7", "4/7", "7/7", "4/7", "1/7", "6/7"),
