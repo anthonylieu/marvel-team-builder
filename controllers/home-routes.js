@@ -1,31 +1,29 @@
-const express = require('express');
+const express = require("express");
 const router = express.Router();
-const mysql = require('mysql');
 
-const connection = mysql.createConnection({
-  host: 'localhost',
-  user: 'root',
-  password: 'rootroot',
-  database: 'marvelteam_db'
-});
+const sequelize = require("../config/connection");
 
 // Get all characters
-router.get('/characters', (req, res) => {
-  const sql = 'SELECT * FROM Characters';
-  connection.query(sql, (err, results) => {
-    if (err) throw err;
+router.get("/characters", async (req, res) => {
+  try {
+    const [results] = await sequelize.query("SELECT * FROM Characters");
     res.json(results);
-  });
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({ message: "Error retrieving characters" });
+  }
 });
 
 // Get a character by ID
-router.get('/characters/:id', (req, res) => {
+router.get("/characters/:id", async (req, res) => {
   const { id } = req.params;
-  const sql = `SELECT * FROM Characters WHERE id = ${id}`;
-  connection.query(sql, (err, result) => {
-    if (err) throw err;
+  try {
+    const [result] = await sequelize.query(`SELECT * FROM Characters WHERE id = ${id}`);
     res.json(result[0]);
-  });
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({ message: "Error retrieving character" });
+  }
 });
 router.get('/', (req, res) => {
   res.render("homepage")
