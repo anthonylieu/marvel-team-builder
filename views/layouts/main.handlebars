@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../public/jass.css">
+    <link rel="stylesheet" href="/css/jass.css">
+    <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Marvel&display=swap" rel="stylesheet">
     <title>Marvel Team Builder | Teams</title>
@@ -12,23 +13,22 @@
 <body>
     <nav class="">
         <h1>MARVEL TEAM BUILDER</h1>
-        <img src="../../public/images/ui_assets/exit.png" class="logout" alt="logout">
+        {{#if logged_in}}
+        <a href="/profile">profile</a> |
+        <button class="no-button" id="logout"><img src="/public/images/ui_assets/background-image.png" class="logout" alt="logout"></button>
+        {{else}}
+        <a href="/login">login</a>
+        {{/if}}
     </nav>
-    <main>
-        <img src="{{image_path}}" alt="{{description}}">
-        <div class="createTeam">Create Your Team!</div>
-    </main>
-    <section class="searchbar">
-        <input type="text" class="searchbar">
-        <button class="search"><img src="../../public/images/ui_assets/search.png" class="search" alt="search"></button>
+
+    <section>
+        {{{body}}}
     </section>
-    <section class="team_review">
-        <div></div>
-    </section>
-    <section class="team_block">
-        <div class="team_card">
-        </div>
-    </section>
-    <script src="../../public/test.js"></script>
+
+    {{#if logged_in}}
+        <script src="/js/logout.js"></script>
+    {{/if}}
+
+
 </body>
 </html>
