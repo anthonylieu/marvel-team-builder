@@ -7,7 +7,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
 // Import routes
-const homeRoutes = require('./home-routes.js');
+const homeRoutes = require('./controllers/home-routes.js');
 
 // Set up routes
 app.use('/', homeRoutes);
