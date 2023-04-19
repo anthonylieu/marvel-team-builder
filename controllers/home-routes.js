@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-
+const path = require("path");
 const sequelize = require("../config/connection");
 
 // Get all characters
@@ -25,7 +25,16 @@ router.get("/characters/:id", async (req, res) => {
     res.status(500).json({ message: "Error retrieving character" });
   }
 });
+
+// Render the homepage
 router.get('/', (req, res) => {
   res.render("homepage")
 });
+
+// Render the character-sheet
+router.get("/character-sheet", (req, res) => {
+  // Replace 'characters' with actual data you want to pass to the template
+  res.render("character-sheet", { characters: [] });
+});
+
 module.exports = router;
