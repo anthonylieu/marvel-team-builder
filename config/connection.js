@@ -2,7 +2,8 @@
 // Import the dotenv library and load environment variables from a .env file
 
 const Sequelize = require("sequelize");
-// Import the dotenv library and load environment variables from a .env file
+// Check if there's a JAWSDB_URL environment variable (used in production on Heroku)
+
 require("dotenv").config();
 
 let sequelize;
