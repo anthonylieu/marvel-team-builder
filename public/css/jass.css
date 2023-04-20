@@ -131,24 +131,38 @@ h1 {
 
 .searchbar {
     position: fixed;
-    width: 570px;
-    height: 30px;
+    width: 700px;
+    height: 40px;
     top: 25px;
     right: 40px;
     z-index: 6;
 }
 
+.assemble {
+    width: 100px;
+    height: 40px;
+    border: none;
+    font-size: 1.8em;
+    font-weight: bold;
+    padding-right: 20px;
+    border-radius: 15px 0px 0px 15px;
+    background-color: var(--marvel);
+}
+
 .searchbar input {
     width: 460px;
     height: 40px;
+    top: 10%;
     border: none;
-    padding: 0px;
-    border-radius: 12px 0px 0px 12px;
+    padding: 0px 10px;
+    padding-top: 5px;
+    font-size: 1.5em;
 }
 
 .search {
     width: 40px;
     height: 40px;
+    top: 10%;
     border: none;
     border-radius: 0px 15px 15px 0px;
     background-color: var(--marvel);
@@ -158,33 +172,15 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 10px;
-    height: 10px;
+    width: 20px;
+    height: 20px;
 }
 
-/* ==== ==== */
-
-/* .character-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1em;
+@media screen and (max-width: 950px){
+    .searchbar {
+        display: none;
+    }
 }
-
-.character {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.name {
-  margin-top: 0.5em;
-  font-size: 1.2em;
-  font-weight: bold;
-  text-align: center;
-}
-
-.spiderman {
-  background-image: url('spider-man.webp');} */
 
 /* ==== Team Page Exclusive CSS ==== */
 
@@ -207,8 +203,10 @@ h1 {
 
 .characters-container {
     position: absolute;
+    background-image: linear-gradient(45deg var(--off-black) var(--dark-grey));
+    justify-content: center;
     top: 100px;
-    left: 50px;
+    left: 0px;
     margin: 20px;
     z-index: 1;
 }
@@ -217,7 +215,6 @@ h1 {
     margin: 10px;
     border-radius: 30px;
     box-shadow: #000000 6px 6px 4px;
-    
 }
 
 .character img {
@@ -228,4 +225,10 @@ h1 {
 .char-image {
     width: 150px;
     height: 200px;
+}
+
+@media screen and (max-width: 950px){
+    .characters-container {
+        width: 100vw;
+    }
 }
