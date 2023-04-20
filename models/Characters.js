@@ -66,6 +66,7 @@ Characters.init(
       allowNull: true,
     },
   },
+    // Define hooks that will run before creating a new Character
   {
     hooks: {
       beforeCreate: async (newCharacterData) => {
