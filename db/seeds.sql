@@ -1,4 +1,11 @@
 USE marvelteam_db;
+
+CREATE TABLE users (
+  id INT PRIMARY KEY AUTO_INCREMENT,
+  name VARCHAR(255),
+  password VARCHAR(255)
+);
+
 CREATE TABLE Characters (
   id INT PRIMARY KEY AUTO_INCREMENT,
   title VARCHAR(255),
@@ -10,6 +17,11 @@ CREATE TABLE Characters (
   fighting_skills VARCHAR(3),
   image VARCHAR(255)
 );
+
+INSERT INTO users(name, password)
+VALUES
+  ("Sean", "password"),
+  ("Anthony", "password");
 
 INSERT INTO Characters(title, intelligence, strength, speed, durability, energy, fighting_skills, image)
 VALUES 
@@ -55,7 +67,7 @@ VALUES
   ("War Machine (Jim Rhodes)", "3/7", "6/7", "5/7", "6/7", "6/7", "4/7", "war-machine.webp"),
   ("Drax the Destroyer", "2/7", "5/7", "2/7", "7/7", "6/7", "4/7", "drax-the-destroyer.webp"),
   ("Gamora", "3/7", "3/7", "4/7", "3/7", "1/7", "6/7", "gamora.webp"),
-  ("Iceman (Bobby Drake)", "2/7", "3/7", "3/7", "4/7", "5/7", "4/7". "iceman.webp"),
+  ("Iceman (Bobby Drake)", "2/7", "3/7", "3/7", "4/7", "5/7", "4/7", "iceman.webp"),
   ("Wasp (Janet Van Dyne)", "3/7", "5/7", "3/7", "2/7", "4/7", "4/7", "wasp.webp"),
   ("Beast (Hank McCoy)", "5/7", "4/7", "3/7", "4/7", "1/7", "4/7", "beast.webp"),
   ("Captain America (Sam Wilson)", "2/7", "2/7", "3/7", "2/7", "1/7", "4/7", "captain-america-sam-wilson.webp"),
