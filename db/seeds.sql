@@ -27,7 +27,7 @@ INSERT INTO Characters(title, intelligence, strength, speed, durability, energy,
 VALUES 
   ("Spider-Man (Peter Parker)", "4/7", "4/7", "3/7", "3/7", "1/7", "4/7", "spider-man.webp"),
   ("Thor (Thor Odinson)", "2/7", "7/7", "7/7", "6/7", "6/7", "4/7", "thor-img.webp"),
-  ("Doctor Strange (Stephen Strange)", "4/7", "2/7", "7/7", "2/7", "6/7", "6/7", "vision.webp"),
+  ("Doctor Strange (Stephen Strange)", "4/7", "2/7", "7/7", "2/7", "6/7", "6/7", "doctor-strange.webp"),
   ("Deadpool (Wade Wilson)", "2/7", "4/7", "7/7", "4/7", "1/7", "6/7", "deadpool.webp"),
   ("Iron Man (Tony Stark)", "6/7", "6/7", "5/7", "6/7", "6/7", "4/7", "iron-man.webp"),
   ("Wolverine (James Howlett)", "2/7", "4/7", "2/7", "4/7", "2/7", "7/7", "wolverine.webp"),
