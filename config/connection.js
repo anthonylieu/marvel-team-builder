@@ -15,7 +15,7 @@ if (process.env.JAWSDB_URL) {
     // If there isn't, create a Sequelize connection using the other environment variables
   sequelize = new Sequelize(
     process.env.DB_NAME, // The name of the database to connect to
-    process.env.DB_USER,
+    process.env.DB_USER, // The username to use for authentication
     process.env.DB_PASSWORD,
     {
       host: "localhost",
