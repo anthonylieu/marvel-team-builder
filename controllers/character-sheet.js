@@ -33,3 +33,25 @@ router.get("characters/:title", async (req, res) => {
 });
 
 module.exports = router;
+
+// outer.get('/', async (req, res) => {
+//   try {
+//     const readerData = await Reader.findAll({
+//       include: [{ model: LibraryCard }, { model: Book }],
+//       attributes: {
+//         include: [
+//           [
+//             // Use plain SQL to get a count of all short books
+//             sequelize.literal(
+//               '(SELECT COUNT(*) FROM book WHERE pages BETWEEN 100 AND 300 AND book.reader_id = reader.id)'
+//             ),
+//             'shortBooks',
+//           ],
+//         ],
+//       },
+//     });
+//     res.status(200).json(readerData);
+//   } catch (err) {
+//     res.status(500).json(err);
+//   }
+// });
