@@ -36,7 +36,7 @@ VALUES
   ("Phoenix (Jean Grey)", "3/7", "2/7", "7/7", "7/7", "7/7", "4/7", "phoenix.webp"),
   ("Gambit (Remy LeBeau)", "2/7", "2/7", "2/7", "2/7", "2/7", "4/7", "gambit.webp"),
   ("Nightcrawler (Kurt Wagner)", "3/7", "2/7", "7/7", "2/7", "1/7", "3/7", "nightcrawler.webp"),
-  ("Colossus (Piotr Rasputin)", "2/7", "6/7", "2/7", "6/7", "1/7", "4/7", "colossus.webp"),
+  ("Colossus (Piotr Rasputin)", "2/7", "6/7", "2/7", "6/7", "1/7", "4/7", "collosus.webp"),
   ("Vision", "4/7", "5/7", "3/7", "6/7", "6/7", "3/7", "vision.webp"),
   ("Daredevil (Matt Murdock)", "3/7", "3/7", "2/7", "2/7", "4/7", "5/7", "daredevil.webp"),
   ("Ghost Rider (Robbie Reyes)", "2/7", "4/7", "7/7", "5/7", "3/7", "4/7", "ghost-rider-robbie-reyes.webp"),
@@ -48,7 +48,7 @@ VALUES
   ("Blade (Eric Brooks)", "2/7", "4/7", "2/7", "4/7", "1/7", "5/7", "blade.webp"),
   ("The Thing (Ben Grimm)", "3/7", "6/7", "2/7", "6/7", "1/7", "5/7", "the-thing.webp"),
   ("Cable (Nathan Summers)", "3/7", "4/7", "7/7", "4/7", "4/7", "6/7", "cable.webp"),
-  ("Agent Nick Fury)", "3/7", "3/7", "2/7", "3/7", "1/7", "6/7", "agent-nick-fuy.webp"),
+  ("Agent Nick Fury)", "3/7", "3/7", "2/7", "3/7", "1/7", "6/7", "agent-nick-fury.webp"),
   ("Captain Marvel (Carol Danvers)", "3/7", "5/7", "5/7", "6/7", "5/7", "4/7", "captain-marvel.webp"),
   ("Nova (Sam Alexander)", "6/7", "6/7", "7/7", "6/7", "6/7", "3/7", "nova.webp"),
   ("Quicksilver (Pietro Maximoff)", "3/7", "4/7", "5/7", "3/7", "1/7", "4/7", "quicksilver.webp"),
@@ -86,7 +86,7 @@ VALUES
   ("Shang-Chi", "4/7", "3/7", "4/7", "4/7", "3/7", "7/7", "shang-chi.webp"),
   ("Loki", "5/7", "5/7", "7/7", "6/7", "6/7", "3/7", "loki.webp"),
   ("Photon (Monica Rambeau)", "3/7", "2/7", "6/7", "4/7", "6/7", "4/7", "photon.webp"),
-  ("Black Widow (Yelena Belova)", "3/7", "6/7", "5/7", "7/7", "6/7", "5/7", "black-widow-yelena-remova.webp");
+  ("Black Widow (Yelena Belova)", "3/7", "6/7", "5/7", "7/7", "6/7", "5/7", "black-widow-yelana-remova.webp");
 
 
   show tables;
