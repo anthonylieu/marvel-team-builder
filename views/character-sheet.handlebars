@@ -3,18 +3,18 @@
         <input type="text" />
         <button class="search"><img src="/images/ui_assets/search.png" alt="search" class="glass"/></button>
     </section>
-    <main class="stat_wrapper">
-        <div class="characters-container">
+    <main class="stat_wrapper align-baseline container">
+        <div class="characters-container row row-col-4">
             {{#each characters as |character|}}
-            <div class="character col col-sm-3 col-md-6">
+            <div class="character flex-row align-items-center card bg-secondary col col-sm-1 col-md-2 col-lg-1 row rounded-lg">
                 <h2>{{character.title}}</h2>
                 <img src="/images/{{character.image}}" alt="{{character.title}}" class="char-image"/>
-                <div class="chart col col-sm-3 col-md-6">{{character.intelligence}}</div>
-                <div class="chart col col-sm-3 col-md-6">{{character.strength}}</div>
-                <div class="chart col col-sm-3 col-md-6">{{character.speed}}</div>
-                <div class="chart col col-sm-3 col-md-6">{{character.durability}}</div>
-                <div class="chart col col-sm-3 col-md-6">{{character.energy}}</div>
-                <div class="chart col col-sm-3 col-md-6">{{character.fighting_skills}}</div>
+                <div class="chart text-white col">{{character.intelligence}}</div>
+                <div class="chart text-white col">{{character.strength}}</div>
+                <div class="chart text-white col">{{character.speed}}</div>
+                <div class="chart text-white col">{{character.durability}}</div>
+                <div class="chart text-white col">{{character.energy}}</div>
+                <div class="chart text-white col">{{character.fighting_skills}}</div>
             </div>
             {{/each}}
         </div>
