@@ -66,7 +66,7 @@ Characters.init(
       allowNull: true,
     },
   },
-    // Define hooks that will run before creating a new Character
+  // Define hooks that will run before creating a new Character
   {
     hooks: {
       beforeCreate: async (newCharacterData) => {
@@ -77,6 +77,7 @@ Characters.init(
         return newCharacterData;
       },
     },
+    // Define the sequelize instance, and other options
     sequelize,
     timestamps: false,
     freezeTableName: true,
