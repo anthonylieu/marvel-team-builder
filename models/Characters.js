@@ -57,6 +57,10 @@ Characters.init(
         max: 7,
       },
     },
+    image: {
+      type: DataTypes.STRING,
+      allowNull: true,
+    },
   },
   {
     hooks: {
