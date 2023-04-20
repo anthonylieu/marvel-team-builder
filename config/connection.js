@@ -1,4 +1,6 @@
 // Import the Sequelize library
+// Import the dotenv library and load environment variables from a .env file
+
 const Sequelize = require("sequelize");
 // Import the dotenv library and load environment variables from a .env file
 require("dotenv").config();
