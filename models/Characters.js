@@ -11,7 +11,7 @@ class Characters extends Model {
     return bcrypt.compareSync(loginPw, this.password);
   }
 }
-
+// Initialize the Characters model with properties and validations
 Characters.init(
   {
     title: {
