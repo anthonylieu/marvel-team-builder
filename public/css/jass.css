@@ -122,7 +122,39 @@ h1 {
     height: 20px;
     border-radius: 15px;
     margin-top: 20px;
-    font-family: var(--marvel_text)
+    font-family: var(--marvel_text);
+    font-size: 0.8em;
+    padding: 0px 12px;
+    margin-bottom: 15px;
+}
+
+.searchbar {
+    position: fixed;
+    width: 570px;
+    height: 30px;
+    top: 120px;
+    right: 40px;
+}
+
+.searchbar input {
+    width: 460px;
+    height: 24px;
+    border-radius: 12px 0px 0px 12px;
+}
+
+.search {
+    width: 30px;
+    height: 30px;
+    border-radius: 0px 15px 15px 0px;
+    background-color: var(--marvel);
+}
+
+.glass {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10px;
+    height: 10px;
 }
 
 /* ==== ==== */
@@ -151,23 +183,6 @@ h1 {
 
 /* ==== Team Page Exclusive CSS ==== */
 
-.searchbar {
-    position: fixed;
-    width: 570px;
-    height: 90px;
-    top: 120px;
-    right: 40px;
-}
-
-.searchbar input {
-    width: 460px;
-    height: 90px;
-}
-
-.search {
-    width: 90px;
-    height: 90px;
-}
 
 .team_block {
     position: fixed;
@@ -185,12 +200,7 @@ h1 {
     height: 50px;
 } */
 
-.logout {
-    background-color: #EC1D24;
+.char-image {
+    width: 150px;
+    height: 200px;
 }
-
-.search {
-    display: flex;
-    border-radius: 0px 15px 15px 0px;
-}
-

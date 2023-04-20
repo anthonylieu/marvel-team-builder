@@ -11,9 +11,12 @@
         <div></div>
     </section>
     <section class="team_block">
-        <div class="team_card">
-            <h1>{{team_name}}</h1>
-        </div>
+        {{#each teams as |team|}}
+            <div class="team .col-sm-3 .col-md-6">
+                <h2>Team {{team.id}}</h2>
+                <div class="chart"></div>
+            </div>
+            {{/each}}
 </section>
 <script src="/test.js"></script>
 </body>
