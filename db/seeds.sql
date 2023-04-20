@@ -1,4 +1,11 @@
 USE marvelteam_db;
+
+CREATE TABLE users (
+  id INT PRIMARY KEY AUTO_INCREMENT,
+  name VARCHAR(255),
+  password VARCHAR(255)
+);
+
 CREATE TABLE Characters (
   id INT PRIMARY KEY AUTO_INCREMENT,
   title VARCHAR(255),
@@ -10,6 +17,11 @@ CREATE TABLE Characters (
   fighting_skills VARCHAR(3),
   image VARCHAR(255)
 );
+
+INSERT INTO users(name, password)
+VALUES
+  ("Sean", "password"),
+  ("Anthony", "password");
 
 INSERT INTO Characters(title, intelligence, strength, speed, durability, energy, fighting_skills, image)
 VALUES 
