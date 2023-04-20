@@ -215,7 +215,15 @@ h1 {
 
 .character {
     margin: 10px;
+    border-radius: 30px;
+    box-shadow: #000000 6px 6px 4px;
+    
 }
+
+.character img {
+    border-radius: 15px;
+}
+
 
 .char-image {
     width: 150px;
