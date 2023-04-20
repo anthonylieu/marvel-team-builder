@@ -12,6 +12,7 @@ if (process.env.JAWSDB_URL) {
     // If there is, create a Sequelize connection using the JAWSDB_URL value
   sequelize = new Sequelize(process.env.JAWSDB_URL);
 } else {
+    // If there isn't, create a Sequelize connection using the other environment variables
   sequelize = new Sequelize(
     process.env.DB_NAME,
     process.env.DB_USER,
