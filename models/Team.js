@@ -16,11 +16,10 @@ Team.init(
       primaryKey: true,
     },
     character: {
-      type: DataTypes.STRING,
+      type: DataTypes.ARRAY,
       allowNull: false,
-      reference: {
-        model: "Characters",
-        key: "id",
+      validate: {
+        len: [6],
       },
     },
   },
