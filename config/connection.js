@@ -8,6 +8,7 @@ require("dotenv").config();
 
 let sequelize;
 
+// Check if there's a JAWSDB_URL environment variable (used in production on Heroku).
 if (process.env.JAWSDB_URL) {
   sequelize = new Sequelize(process.env.JAWSDB_URL);
 } else {
