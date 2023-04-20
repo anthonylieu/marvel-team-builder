@@ -16,7 +16,7 @@ if (process.env.JAWSDB_URL) {
   sequelize = new Sequelize(
     process.env.DB_NAME, // The name of the database to connect to
     process.env.DB_USER, // The username to use for authentication
-    process.env.DB_PASSWORD,
+    process.env.DB_PASSWORD, // The password to use for authentication.
     {
       host: "localhost",
       dialect: "mysql",
