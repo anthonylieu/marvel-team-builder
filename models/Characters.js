@@ -85,5 +85,5 @@ Characters.init(
     modelName: "Characters",
   }
 );
-// Export the Characters model for use in other parts of the application
+// Export the Characters model for use in other parts of the application.
 module.exports = Characters;
