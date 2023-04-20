@@ -24,5 +24,5 @@ if (process.env.JAWSDB_URL) {
     }
   );
 }
-
+// Export the Sequelize connection so it can be used in other parts of the application
 module.exports = sequelize;
