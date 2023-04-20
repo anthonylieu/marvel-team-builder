@@ -4,11 +4,11 @@
     </nav>
    
     <section class="searchbar">
-        <input type="text" />
+        <input type="text" id="search-input" />
         <button class="search"><img src="/images/ui_assets/search.png" alt="search" /></button>
     </section>
     <main class="stat_wrapper">
-        <div class="characters-container">
+        <div class="characters-container" id="characters-container">
             {{#each characters as |character|}}
             <div class="character">
                 <h2>{{character.title}}</h2>
@@ -24,4 +24,5 @@
             {{/each}}
         </div>
     </main>
+    <script src="/js/search.js"></script>
 </body>
