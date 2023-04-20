@@ -3,6 +3,7 @@ const { Model, DataTypes } = require("sequelize");
 const bcrypt = require("bcrypt");
 const sequelize = require("../config/connection");
 
+// Define the Characters class which extends the Model class from sequelize
 class Characters extends Model {
   checkPassword(loginPw) {
     return bcrypt.compareSync(loginPw, this.password);
