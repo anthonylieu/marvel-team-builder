@@ -1,3 +1,4 @@
+// Import the Sequilize library
 const Sequelize = require("sequelize");
 require("dotenv").config();
 
