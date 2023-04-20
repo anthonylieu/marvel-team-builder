@@ -86,7 +86,7 @@ VALUES
   ("Shang-Chi", "4/7", "3/7", "4/7", "4/7", "3/7", "7/7", "shang-chi.webp"),
   ("Loki", "5/7", "5/7", "7/7", "6/7", "6/7", "3/7", "loki.webp"),
   ("Photon (Monica Rambeau)", "3/7", "2/7", "6/7", "4/7", "6/7", "4/7", "photon.webp"),
-  ("Black Widow (Yelena Belova)", "3/7", "6/7", "5/7", "7/7", "6/7", "5/7", "black-widow-yelena-remova.webp");
+  ("Black Widow (Yelena Belova)", "3/7", "6/7", "5/7", "7/7", "6/7", "5/7", "black-widow-yelana-remova.webp");
 
 
   show tables;
