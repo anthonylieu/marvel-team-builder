@@ -1,14 +1,19 @@
+// Import necessary packages and modules
 const { Model, DataTypes } = require("sequelize");
 const bcrypt = require("bcrypt");
 const sequelize = require("../config/connection");
 
 
+// Define the Characters class which extends the Model class from sequelize
+
 class Characters extends Model {
+
+  // Define a method to compare a password to the hashed password for a given character
   checkPassword(loginPw) {
     return bcrypt.compareSync(loginPw, this.password);
   }
 }
-
+// Initialize the Characters model with properties and validations
 Characters.init(
   {
     title: {
@@ -63,6 +68,7 @@ Characters.init(
       allowNull: true,
     },
   },
+  // Define hooks that will run before creating a new Character
   {
     hooks: {
       beforeCreate: async (newCharacterData) => {
@@ -73,6 +79,7 @@ Characters.init(
         return newCharacterData;
       },
     },
+    // Define the sequelize instance, and other options
     sequelize,
     timestamps: false,
     freezeTableName: true,
@@ -80,5 +87,5 @@ Characters.init(
     modelName: "Characters",
   }
 );
-
+// Export the Characters model for use in other parts of the application.
 module.exports = Characters;
