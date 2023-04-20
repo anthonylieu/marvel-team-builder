@@ -15,9 +15,22 @@ Team.init(
       allowNull: false,
       primaryKey: true,
     },
+    user_id: {
+      type: DataTypes.INTEGER,
+      references: {
+        model: 'users',
+        key: 'id',
+      },
+    },
     character: {
-      type: DataTypes.ARRAY,
+      type: DataTypes.STRING,
       allowNull: false,
+      get() {
+          return this.getDataValue('character').split(';')
+      },
+      set(val) {
+         this.setDataValue('character',val.join(';'));
+      },
       validate: {
         len: [6],
       },
