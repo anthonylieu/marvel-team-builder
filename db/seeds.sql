@@ -6,7 +6,7 @@ CREATE TABLE users (
   password VARCHAR(255)
 );
 
-CREATE TABLE Characters (
+CREATE TABLE characters (
   id INT PRIMARY KEY AUTO_INCREMENT,
   title VARCHAR(255),
   intelligence VARCHAR(3),
@@ -23,7 +23,7 @@ VALUES
   ("Sean", "password"),
   ("Anthony", "password");
 
-INSERT INTO Characters(title, intelligence, strength, speed, durability, energy, fighting_skills, image)
+INSERT INTO characters(title, intelligence, strength, speed, durability, energy, fighting_skills, image)
 VALUES 
   ("Spider-Man (Peter Parker)", "4/7", "4/7", "3/7", "3/7", "1/7", "4/7", "spider-man.webp"),
   ("Thor (Thor Odinson)", "2/7", "7/7", "7/7", "6/7", "6/7", "4/7", "thor-img.webp"),
