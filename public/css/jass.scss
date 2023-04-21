@@ -217,6 +217,14 @@ h1 {
     }
 }
 
+@media screen and (max-width: 800px){
+    .searchbar {
+        display: flex;
+        justify-content: center;
+        top: 110px;
+    }
+}
+
 .search {
     width: 40px;
     height: 40px;
@@ -300,6 +308,20 @@ h1 {
 .char-image {
     width: 150px;
     height: 200px;
+}
+
+@media screen and (max-width: 1200px){
+    .char-image {
+        width: 100px;
+        height: 150px;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .char-image {
+        width: 50px;
+        height: 100px;
+    }
 }
 
 .charts-css {

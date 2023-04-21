@@ -205,6 +205,13 @@ h1 {
     top: 110px;
   }
 }
+@media screen and (max-width: 800px) {
+  .searchbar {
+    display: flex;
+    justify-content: center;
+    top: 110px;
+  }
+}
 .search {
   width: 40px;
   height: 40px;
@@ -282,6 +289,18 @@ h1 {
   height: 200px;
 }
 
+@media screen and (max-width: 1200px) {
+  .char-image {
+    width: 100px;
+    height: 150px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .char-image {
+    width: 50px;
+    height: 100px;
+  }
+}
 .charts-css {
   border-radius: 15px;
 }

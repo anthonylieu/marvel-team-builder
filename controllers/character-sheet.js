@@ -18,9 +18,11 @@ router.get("/", async (req, res) => {
   res.render("character-sheet", { characters });
 });
 
-router.get("characters/:title", async (req, res) => {
+router.get("character/:title", async (req, res) => {
   try {
-    const characterData = await character.findAll(req.params.title);
+    const characterData = await Character.findAll({
+      where: (title = character.title),
+    });
     if (!characterData) {
       res.status(404).json({ message: "No character with this title!" });
       return;
