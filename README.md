@@ -27,10 +27,10 @@
    
 
 ## Credits
-Anthony Lieu - [GitHub Profile](https://github.com/anthonylieu)
-Sean Haboon - [GitHub Profile](https://github.com/shaboon)
-Sean Holian - [GitHub Profile](https://github.com/seannoway)
-Beyonce Kinston - [GitHub Profile](https://github.com/BeyonceKinston)
+<br>Anthony Lieu - [GitHub Profile](https://github.com/anthonylieu)</br>
+<br>Sean Haboon - [GitHub Profile](https://github.com/shaboon)</br>
+<br>Sean Holian - [GitHub Profile](https://github.com/seannoway)</br>
+<br>Beyonce Kinston - [GitHub Profile](https://github.com/BeyonceKinston)</br>
 
 ## License 
 The Marvel Team Builder App is licensed under the MIT License. You are free to use, modify, and distribute the app as you see fit, as long as you include the original license and copyright notices.
