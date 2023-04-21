@@ -222,4 +222,12 @@ h1 {
 .char-image {
   width: 150px;
   height: 200px;
+}
+
+.charts-css {
+  border-radius: 15px;
+}
+.charts-css td {
+  padding: 100px;
+  margin: 5px;
 }/*# sourceMappingURL=jass.css.map */
