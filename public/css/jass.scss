@@ -215,7 +215,7 @@ h1 {
     left: 0px;
     margin: 20px;
     z-index: 1;
-    
+
     @media screen and (max-width: 950px){
         .characters-container {
             width: 100vw;
@@ -239,4 +239,12 @@ h1 {
 .char-image {
     width: 150px;
     height: 200px;
+}
+
+.charts-css {
+    border-radius: 15px;
+    td {
+        padding: 100px;
+        margin: 5px;
+    }
 }
