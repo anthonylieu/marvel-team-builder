@@ -2,6 +2,7 @@ const express = require("express");
 const router = express.Router();
 const path = require("path");
 const sequelize = require("../config/connection");
+const User = require("../models/User"); // Import the User model
 
 // Get all characters
 router.get("/characters", async (req, res) => {
@@ -31,7 +32,25 @@ router.get('/', (req, res) => {
   res.render("homepage")
 });
 
-// Render the character-sheet
+// Signup route
+router.post('/signup', async (req, res) => {
+  const { username, password, confirmPassword } = req.body;
 
+  if (password !== confirmPassword) {
+    // Handle password mismatch error
+    return res.status(400).send('Passwords do not match');
+  }
+
+  try {
+    // Create a new user and save it to the database
+    const newUser = await User.create({ username, password });
+    res.status(201).send('User created successfully');
+  } catch (error) {
+    console.error("Error details:", error);
+    res.status(500).send('Error creating user');
+  }
+});
+
+// Render the character-sheet
 
 module.exports = router;
