@@ -196,12 +196,15 @@ h1 {
   padding-top: 5px;
   font-size: 1.5em;
 }
-@media screen and (max-width: 950px) {
-  .searchbar .searchbar {
-    display: none;
+
+@media screen and (max-width: 1300px) {
+  .searchbar {
+    display: flex;
+    justify-content: center;
+    right: 0px;
+    top: 110px;
   }
 }
-
 .search {
   width: 40px;
   height: 40px;
