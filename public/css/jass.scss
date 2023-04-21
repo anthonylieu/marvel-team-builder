@@ -8,7 +8,6 @@
     --dark-grey: #505050;
     --grey: #838383;
     --marvel_text: 'Marvel', sans-serif;
-
 }
 
 body {
@@ -39,7 +38,7 @@ nav {
     top: 0px;
     width: 100vw;
     height: 100px;
-    background-color: black;
+    background-color: var(--black);
     font-family: var(--marvel_text);
     z-index: 5;
 }
@@ -58,6 +57,24 @@ h1 {
     z-index: 2;
 }
 
+@media screen and (max-width: 400px){
+    nav {
+        display: flex;
+        justify-content: center;
+    }
+    h1 {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        width: 300px;
+        height: 50px;
+        font-size: 1.8em;
+    }
+    .form {
+        bottom: -50px
+    }
+}
+
 .background-image {
     position: fixed;
     bottom: -0px;
@@ -65,6 +82,31 @@ h1 {
     width: 100vw;
     opacity: 50%;
     z-index: 0;
+}
+
+@media screen and (max-width: 1200px){
+    .background-image {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 650px){
+    .form_wrapper {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 650px){
+    .login_wrapper {
+        border-radius: 20px 20px 0px 0px !important;
+        margin-bottom: 10px !important;
+    }
+    .signup_wrapper {
+        border-radius: 0px 0px 20px 20px !important;
+        margin-bottom: 10px !important;
+    }
 }
 
 .form {
@@ -135,15 +177,15 @@ h1 {
 
 .searchbar {
     position: fixed;
-    width: 700px;
+    width: 750px;
     height: 40px;
     top: 25px;
     right: 40px;
     z-index: 6;
 }
 
-.assemble {
-    width: 100px;
+.signout {
+    width: 125px;
     height: 40px;
     border: none;
     font-size: 1.8em;
@@ -186,6 +228,14 @@ h1 {
     justify-content: center;
     width: 20px;
     height: 20px;
+}
+
+
+.ui:hover {
+    box-shadow: var(--marvel) 2px 2px 8px;
+}
+.ui:active {
+    box-shadow: var(--off-white) 2px 2px 8px;
 }
 
 /* ==== Team Page Exclusive CSS ==== */
@@ -233,6 +283,14 @@ h1 {
     img {
         border-radius: 15px;
     }
+}
+
+.character:hover {
+    box-shadow: var(--marvel) 2px 2px 8px;
+}
+
+.character:active {
+    box-shadow: var(--off-white) 2px 2px 8px;
 }
 
 
