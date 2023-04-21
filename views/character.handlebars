@@ -1,40 +1,40 @@
 <body>
-    <section class="searchbar">
-        <button class="assemble ui">ASSEMBLE</button>
+    {{!-- <section class="searchbar">
         <button class="signout ui">SIGN-OUT</button>
         <input type="text" />
         <button class="search ui"><img src="/images/ui_assets/search.png" alt="search" class="glass"/></button>
-    </section>
+    </section> --}}
     <main class="stat_wrapper align-baseline container">
         <div class="characters-container row">
-            {{#each teams as |team|}}
             <div class="character card bg-secondary col-6 col-md-4 col-lg-2 mb-4">
                 <div class="card-body">
-                    <h2 class="card-title">{{team.id}}</h2>
+                    <h2 class="card-title">{{characters.title}}</h2>
+                    <input class="id" hidden value="{{characters.id}}">
+                    <img src="/images/{{characters.image}}" alt="{{characters.title}}" class="char-image text-center col-3 mb-2"/>
                 <div class="chart col-12">
                     <table class="charts-css bar">
 
-                        <caption> Team Evaluation </caption>
+                        <caption> Character Evaluation </caption>
 
                         <tbody>
                             <tr>
 
-                            <td style="--size: calc( {{team.intelligence}} )">| INT {{team.intelligence}} |</td>
+                            <td style="--size: calc( {{characters.intelligence}} )">| INT {{characters.intelligence}} |</td>
                             </tr>
                             <tr>
-                            <td style="--size: calc( {{team.strength}} )">| STR  {{team.strength}} |</td>
+                            <td style="--size: calc( {{characters.strength}} )">| STR  {{characters.strength}} |</td>
                             </tr>
                             <tr>
-                            <td style="--size: calc( {{team.speed}} )">| SPD  {{team.speed}} |</td>
+                            <td style="--size: calc( {{characters.speed}} )">| SPD  {{characters.speed}} |</td>
                             </tr>
                             <tr>
-                            <td style="--size: calc( {{team.durability}} )">| DUR  {{team.durability}} |</td>
+                            <td style="--size: calc( {{characters.durability}} )">| DUR  {{characters.durability}} |</td>
                             </tr>
                             <tr>
-                            <td style="--size: calc( {{team.energy}} )">| ENG  {{team.energy}} |</td>
+                            <td style="--size: calc( {{characters.energy}} )">| ENG  {{characters.energy}} |</td>
                             </tr>
                             <tr>
-                            <td style="--size: calc( {{team.fighting_skills}} )">| SKL  {{team.fighting_skills}} |</td>
+                            <td style="--size: calc( {{characters.fighting_skills}} )">| SKL  {{characters.fighting_skills}} |</td>
 
                             </tr>
                         </tbody>
@@ -58,7 +58,6 @@
                     </div> --}}
                 </div>
             </div>
-            {{/each}}
         </div>
     </main>
     <script src="/js/team.js"></script>
