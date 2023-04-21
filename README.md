@@ -23,9 +23,8 @@
 
 
 ## Visuals
- ```md
-    ![screenshot of deployed application](assets/images/screenshot.png)
-    ```
+[screenshot of deployed application](assets/images/screenshot.png)
+   
 
 ## Credits
 Anthony Lieu - [GitHub Profile](https://github.com/anthonylieu)
