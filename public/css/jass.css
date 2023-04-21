@@ -114,6 +114,9 @@ h1 {
   z-index: 6;
 }
 
+.form {
+  background-color: black;
+}
 .form h3 {
   color: var(--white);
   text-align: center;
@@ -307,4 +310,8 @@ h1 {
 .charts-css td {
   padding: 100px;
   margin: 5px;
+}
+
+.charts-css.bar tbody tr td {
+  flex-direction: column;
 }/*# sourceMappingURL=jass.css.map */

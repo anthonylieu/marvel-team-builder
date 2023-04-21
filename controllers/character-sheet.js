@@ -18,17 +18,28 @@ router.get("/", async (req, res) => {
   res.render("character-sheet", { characters });
 });
 
-router.get("character/:title", async (req, res) => {
+router.get("/:title", async (req, res) => {
   try {
-    const characterData = await Character.findAll({
-      where: (title = character.title),
+    const characterData = await Character.findByPk(req.params.title, {
+      include: [{ model: Character }],
+      attributes: {
+        include: [
+          [
+            // Use plain SQL to get a character
+            sequelize.literal(
+              `SELECT * FROM characters WHERE title = ${title};`
+            ),
+          ],
+        ],
+      },
     });
+
     if (!characterData) {
-      res.status(404).json({ message: "No character with this title!" });
+      res.status(404).json({ message: "No Character Found with that title" });
       return;
     }
-    const character = characterData.get({ plain: true });
-    res.render("character", character);
+
+    res.status(200).json(characterData);
   } catch (err) {
     res.status(500).json(err);
   }

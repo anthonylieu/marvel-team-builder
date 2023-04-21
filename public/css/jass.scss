@@ -119,6 +119,7 @@ h1 {
 }
 
 .form {
+    background-color: black;
     h3 {
     color: var(--white);
     text-align: center;
@@ -330,4 +331,8 @@ h1 {
         padding: 100px;
         margin: 5px;
     }
+}
+
+.charts-css.bar tbody tr td {
+    flex-direction: column;
 }
