@@ -103,3 +103,4 @@ VALUES
 
   show tables;
   select * from characters;
+  select * from users;

@@ -3,61 +3,64 @@ const { Model, DataTypes } = require("sequelize");
 const bcrypt = require("bcrypt");
 const sequelize = require("../config/connection");
 
-
 // Define the Characters class which extends the Model class from sequelize
 
 class Characters extends Model {
-
   // Define a method to compare a password to the hashed password for a given character
-  checkPassword(loginPw) {
-    return bcrypt.compareSync(loginPw, this.password);
-  }
+  // checkPassword(loginPw) {
+  //   return bcrypt.compareSync(loginPw, this.password);
+  // }
 }
 // Initialize the Characters model with properties and validations
 Characters.init(
   {
+    id: {
+      type: DataTypes.INTEGER,
+      primaryKey: true,
+      autoIncrement: true,
+    },
     title: {
       type: DataTypes.STRING,
       allowNull: false,
       primaryKey: true,
     },
     durability: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       allowNull: false,
       validate: {
         max: 7,
       },
     },
     energy: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       allowNull: false,
       validate: {
         max: 7,
       },
     },
     fighting_skills: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       allowNull: false,
       validate: {
         max: 7,
       },
     },
     intelligence: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       allowNull: false,
       validate: {
         max: 7,
       },
     },
     speed: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       allowNull: false,
       validate: {
         max: 7,
       },
     },
     strength: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       allowNull: false,
       validate: {
         max: 7,
@@ -70,15 +73,15 @@ Characters.init(
   },
   // Define hooks that will run before creating a new Character
   {
-    hooks: {
-      beforeCreate: async (newCharacterData) => {
-        newCharacterData.password = await bcrypt.hash(
-          newCharacterData.password,
-          10
-        );
-        return newCharacterData;
-      },
-    },
+    // hooks: {
+    //   beforeCreate: async (newCharacterData) => {
+    //     newCharacterData.password = await bcrypt.hash(
+    //       newCharacterData.password,
+    //       10
+    //     );
+    //     return newCharacterData;
+    //   },
+    // },
     // Define the sequelize instance, and other options
     sequelize,
     timestamps: false,
