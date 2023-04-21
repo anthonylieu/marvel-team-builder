@@ -27,24 +27,11 @@
    
 
 ## Credits
-Anthony Lieu - [GitHub Profile](https://github.com/anthonylieu)
-Sean Haboon - [GitHub Profile](https://github.com/shaboon)
-Sean Holian - [GitHub Profile](https://github.com/seannoway)
-Beyonce Kinston - [GitHub Profile](https://github.com/BeyonceKinston)
+<br>Anthony Lieu - [GitHub Profile](https://github.com/anthonylieu)</br>
+<br>Sean Haboon - [GitHub Profile](https://github.com/shaboon)</br>
+<br>Sean Holian - [GitHub Profile](https://github.com/seannoway)</br>
+<br>Beyonce Kinston - [GitHub Profile](https://github.com/BeyonceKinston)</br>
 
 ## License 
 The Marvel Team Builder App is licensed under the MIT License. You are free to use, modify, and distribute the app as you see fit, as long as you include the original license and copyright notices.
 
-(https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white)
-(https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
-(https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
-(https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white)
-(https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white)
-(ps://img.shields.io/badge/Slack-4A154B?style=for-the-badge&logo=slack&logoColor=white)
-(https://img.shields.io/badge/Zoom-2D8CFF?style=for-the-badge&logo=zoom&logoColor=white)
-(https://img.shields.io/badge/VSCode-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white)
-(https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-(https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
-(https://img.shields.io/badge/json-5E5C5C?style=for-the-badge&logo=json&logoColor=white)
-(https://img.shields.io/badge/Deepin-007CFF?style=for-the-badge&logo=deepin&logoColor=white)
-(https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)
