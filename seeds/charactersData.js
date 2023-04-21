@@ -1,5 +1,5 @@
 const { Characters } = require("../models");
-const charactersdata = [
+const charactersData = [
   {
     title: "Spider-Man (Peter Parker)",
     intelligence: "4/7",
