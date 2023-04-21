@@ -15,6 +15,11 @@
                         <div class="row">
                             <div class="col-6">
                                 <div class="chart text-white col-md-6 col-lg-12">Intelligence: {{character.intelligence}}</div>
+                                <div id="chartContainer">
+                                    <script id="chartTemplate" type="doughnut/x-handlebars-template">
+                                        <canvas id="myChart"></canvas>
+                                    </script>
+                                </div>
                                 <div class="chart text-white col-md-6 col-lg-12">Strength: {{character.strength}}</div>
                                 <div class="chart text-white col-md-6 col-lg-12">Speed: {{character.speed}}</div>
                             </div>
