@@ -15,6 +15,18 @@
 <body>
     <nav class="">
         <h1>MARVEL CHARACTER DATABASE</h1>
+        {{#if logged_out}}
+            <form class="login-local">
+                <button class="login_btn ui">LOGIN</button>
+            </form>
+        {{/if}}
+        {{#if logged_in}}
+            <form class="searchbar">
+                <button class="signout ui">SIGN-OUT</button>
+                <input type="text" />
+                <button class="search ui"><img src="/images/ui_assets/search.png" alt="search" class="glass"/></button>
+            </form>
+        {{/if}}
     </nav>
 
     <section>

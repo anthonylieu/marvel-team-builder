@@ -11,12 +11,35 @@
         <div></div>
     </section>
     <section class="team_block">
-        {{#each teams as |team|}}
-            <div class="team .col-sm-3 .col-md-6">
-                <h2>Team {{team.id}}</h2>
-                <div class="chart"></div>
-            </div>
-            {{/each}}
+            <form class="form new-project-form">
+                <div class="form-group">
+                    <label for="member1">Member 1</label>
+                    <textarea class="form-input" id="text" name="member1"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="member2">Member 2</label>
+                    <textarea class="form-input" id="text" name="member2"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="member3">Member 3</label>
+                    <textarea class="form-input" id="text" name="member3"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="member4">Member 4</label>
+                    <textarea class="form-input" id="text" name="member4"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="member5">Member 5</label>
+                    <textarea class="form-input" id="text" name="member5"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="member6">Member 6</label>
+                    <textarea class="form-input" id="text" name="member6"></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary">Create</button>
+                </div>
+            </form>
 </section>
 <script src="/test.js"></script>
 </body>
