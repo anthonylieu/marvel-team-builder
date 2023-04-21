@@ -44,7 +44,8 @@ router.post('/signup', async (req, res) => {
   try {
     // Create a new user and save it to the database
     const newUser = await User.create({ username, password });
-    res.status(201).send('User created successfully');
+    // Redirect to /character after successful signup
+    res.redirect('/character');
   } catch (error) {
     console.error("Error details:", error);
     res.status(500).send('Error creating user');
