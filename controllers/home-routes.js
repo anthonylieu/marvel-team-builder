@@ -19,7 +19,9 @@ router.get("/characters", async (req, res) => {
 router.get("/characters/:id", async (req, res) => {
   const { id } = req.params;
   try {
-    const [result] = await sequelize.query(`SELECT * FROM Characters WHERE id = ${id}`);
+    const [result] = await sequelize.query(
+      `SELECT * FROM Characters WHERE id = ${id}`
+    );
     res.json(result[0]);
   } catch (err) {
     console.error(err);
@@ -28,30 +30,59 @@ router.get("/characters/:id", async (req, res) => {
 });
 
 // Render the homepage
-router.get('/', (req, res) => {
-  res.render("homepage")
+router.get("/", (req, res) => {
+  res.render("homepage");
 });
 
 // Signup route
-router.post('/signup', async (req, res) => {
+router.post("/signup", async (req, res) => {
   const { username, password, confirmPassword } = req.body;
 
   if (password !== confirmPassword) {
     // Handle password mismatch error
-    return res.status(400).send('Passwords do not match');
+    return res.status(400).send("Passwords do not match");
   }
 
   try {
     // Create a new user and save it to the database
-    const newUser = await User.create({ username, password });
+    User.create({ username, password }).then((dbUserData) => {
+      req.session.save(() => {
+        req.session.user_id = dbUserData.id;
+        req.session.username = dbUserData.username;
+
+        res.json(dbUserData);
+      });
+    });
+
     // Redirect to /character after successful signup
-    res.redirect('/character');
+    res.redirect("/character");
   } catch (error) {
     console.error("Error details:", error);
-    res.status(500).send('Error creating user');
+    res.status(500).send("Error creating user");
   }
 });
 
 // Render the character-sheet
 
 module.exports = router;
+
+// router.post('/', (req, res)=>{
+//   User.create({
+//       username: req.body.username,
+//       email: req.body.email,
+//       password: req.body.password
+//   })
+//   .then(dbUserData =>{
+//       req.session.save(()=>{
+//           req.session.user_id = dbUserData.id;
+//           req.session.username = dbUserData.username;
+//           req.session.loggedIn = true;
+
+//           res.json(dbUserData);
+//       });
+//   })
+//   .catch(err=>{
+//       console.log(err);
+//       res.status(500).json(err);
+//   });
+// });

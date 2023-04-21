@@ -2,7 +2,7 @@ USE marvelteam_db;
 
 CREATE TABLE users (
   id INT PRIMARY KEY AUTO_INCREMENT,
-  name VARCHAR(255),
+  username VARCHAR(255),
   password VARCHAR(255)
 );
 
@@ -18,7 +18,7 @@ CREATE TABLE Characters (
   image VARCHAR(255)
 );
 
-INSERT INTO users(name, password)
+INSERT INTO users(username, password)
 VALUES
   ("Sean", "password"),
   ("Anthony", "password");
