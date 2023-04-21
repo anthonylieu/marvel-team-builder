@@ -18,18 +18,18 @@ router.get("/", async (req, res) => {
   res.render("character-sheet", { characters });
 });
 
-// router.get("characters/:title", async (req, res) => {
-//   try {
-//     const characterData = await character.findAll({where: {req.params.title}});
-//     if (!characterData) {
-//       res.status(404).json({ message: "No character with this title!" });
-//       return;
-//     }
-//     const character = characterData.get({ plain: true });
-//     res.render("character", character);
-//   } catch (err) {
-//     res.status(500).json(err);
-//   }
-// });
+router.get("characters/:title", async (req, res) => {
+  try {
+    const characterData = await character.findAll(req.params.title);
+    if (!characterData) {
+      res.status(404).json({ message: "No character with this title!" });
+      return;
+    }
+    const character = characterData.get({ plain: true });
+    res.render("character", character);
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
 
 module.exports = router;

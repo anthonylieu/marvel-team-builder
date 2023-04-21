@@ -58,6 +58,14 @@ h1 {
     z-index: 2;
 }
 
+@media screen and (max-width: 400px){
+    h1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
 .background-image {
     position: fixed;
     top: -250px;
@@ -176,10 +184,14 @@ h1 {
     height: 20px;
 }
 
-@media screen and (max-width: 950px){
+@media screen and (max-width: 1100px){
     .searchbar {
         display: none;
     }
+}
+
+.ui:active {
+    box-shadow: var(--off-white) 2px 2px 8px;
 }
 
 /* ==== Team Page Exclusive CSS ==== */
@@ -213,9 +225,19 @@ h1 {
 
 .character {
     margin: 10px;
+    border: 1em solid var(--off-black);
     border-radius: 30px;
     box-shadow: #000000 6px 6px 4px;
 }
+
+.character:hover {
+    box-shadow: var(--marvel) 2px 2px 8px;
+}
+
+.character:active {
+    box-shadow: var(--off-white) 2px 2px 8px;
+}
+
 
 .character img {
     border-radius: 15px;
@@ -230,5 +252,12 @@ h1 {
 @media screen and (max-width: 950px){
     .characters-container {
         width: 100vw;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .char-image {
+        width: 75px;
+        height: 100px;
     }
 }
