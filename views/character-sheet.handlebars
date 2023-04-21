@@ -10,8 +10,37 @@
             <div class="character card bg-secondary col mb-4">
                 <div class="card-body">
                     <h2 class="card-title">{{character.title}}</h2>
-                    <img src="/images/{{character.image}}" alt="{{character.title}}" class="char-image img-fluid mb-2"/>
-                    <div class="character-stats">
+                    <img src="/images/{{character.image}}" alt="{{character.title}}" class="char-image text-center col-3 mb-2"/>
+                <div class="chart col-12">
+                    <table class="charts-css bar">
+
+                        <caption> Character Evaluation </caption>
+
+                        <tbody>
+                            <tr>
+                            <td style="--size: calc( {{character.intelligence}} )">| INT {{character.intelligence}} |</td>
+                            </tr>
+                            <tr>
+                            <td style="--size: calc( {{character.strength}} )">| STR  {{character.strength}} |</td>
+                            </tr>
+                            <tr>
+                            <td style="--size: calc( {{character.speed}} )">| SPD  {{character.speed}} |</td>
+                            </tr>
+                            <tr>
+                            <td style="--size: calc( {{character.durability}} )">| DUR  {{character.durability}} |</td>
+                            </tr>
+                            <tr>
+                            <td style="--size: calc( {{character.energy}} )">| ENG  {{character.energy}} |</td>
+                            </tr>
+                            <tr>
+                            <td style="--size: calc( {{character.fighting_skills}} )">| SKL  {{character.fighting_skills}} |</td>
+                            </tr>
+                        </tbody>
+
+                    </table>
+                </div>
+
+                    {{!-- <div class="character-stats">
                         <div class="row">
                             <div class="col-6">
                                 <div class="chart text-white col-md-2 col-lg-6">Intelligence: {{character.intelligence}}</div>
