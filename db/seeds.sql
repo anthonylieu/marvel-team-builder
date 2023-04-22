@@ -2,6 +2,7 @@ USE marvelteam_db;
 
 CREATE TABLE users (
   id INT PRIMARY KEY AUTO_INCREMENT,
+  email VARCHAR(255),
   username VARCHAR(255),
   password VARCHAR(255)
 );
@@ -104,3 +105,5 @@ VALUES
   show tables;
   select * from characters;
   select * from users;
+  
+ SELECT * FROM characters WHERE title = "Groot";
