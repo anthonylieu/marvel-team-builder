@@ -1,5 +1,7 @@
-document.addEventListener(".character-container", function () {
-  const searchInput = this.value;
-  console.log(searchInput);
-  this.router.navigate([`/${searchInput}`]);
-});
+const card = document.getElementsbyClassName(".card");
+
+const onClick = (event) => {
+  console.log(event.srcElement.id);
+};
+
+card.addEventListener("click", onClick);
