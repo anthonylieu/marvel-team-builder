@@ -50,12 +50,10 @@ router.post("/signup", async (req, res) => {
         req.session.user_id = dbUserData.id;
         req.session.username = dbUserData.username;
 
-        res.json(dbUserData);
+        // Redirect to /character after successful signup
+        res.redirect("/character");
       });
     });
-
-    // Redirect to /character after successful signup
-    res.redirect("/character");
   } catch (error) {
     console.error("Error details:", error);
     res.status(500).send("Error creating user");
@@ -65,6 +63,7 @@ router.post("/signup", async (req, res) => {
 // Render the character-sheet
 
 module.exports = router;
+
 
 // router.post('/', (req, res)=>{
 //   User.create({

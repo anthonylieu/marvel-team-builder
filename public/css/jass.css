@@ -190,15 +190,6 @@ a {
   box-shadow: var(--off-white) 2px 2px 8px;
 }
 
-/* ==== Team Page Exclusive CSS ==== */
-.team_block {
-  position: fixed;
-  background-color: var(--off-white);
-  bottom: 0px;
-  width: 100vw;
-  height: 40vh;
-}
-
 /* ==== Character Page Exclusive CSS ==== */
 .characters-container {
   position: absolute;
