@@ -21,8 +21,8 @@ CREATE TABLE Characters (
 
 INSERT INTO users(username, email, password)
 VALUES
-  ("Sean", "password"),
-  ("Anthony", "password");
+  ("Sean", "email", "password"),
+  ("Anthony", "email", "password");
 
 INSERT INTO Characters(title, intelligence, strength, speed, durability, energy, fighting_skills, image)
 VALUES 
@@ -103,7 +103,7 @@ VALUES
 
 
   show tables;
-  select * from characters;
+  select * from Characters;
   select * from users;
   
- SELECT * FROM characters WHERE title = "Groot";
+ SELECT * FROM Characters WHERE title = "Groot";
