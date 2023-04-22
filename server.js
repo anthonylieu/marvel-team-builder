@@ -58,6 +58,17 @@ app.post("/signup", async (req, res) => {
   }
 });
 
+// Add the logout route
+app.post("/api/user-routes/logout", (req, res) => {
+  req.session.destroy((err) => {
+    if (err) {
+      res.status(500).send('An error occurred while logging out');
+    } else {
+      res.status(200).send('Logged out successfully');
+    }
+  });
+});
+
 // Start the server
 sequelize.sync({ force: false }).then(() => {
   app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
