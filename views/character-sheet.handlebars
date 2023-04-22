@@ -8,11 +8,11 @@
         <div class="characters-container row">
             {{#each characters as |character|}}
             <div class="character card bg-secondary col-6 col-md-4 col-lg-2 mb-4">
-                <div class="card-body">
+                <div class="card-body row">
                     <h2 class="card-title">{{character.title}}</h2>
                     <input class="id" hidden value="{{character.id}}">
-                    <img src="/images/{{character.image}}" alt="{{character.title}}" class="char-image text-center col-3 mb-2"/>
-                <div class="chart col-12">
+                    <img src="/images/{{character.image}}" alt="{{character.title}}" class="char-image text-center col-2 mb-2"/>
+                <div class="chart col-10">
                     <table class="charts-css bar">
 
                         <caption> Character Evaluation </caption>
