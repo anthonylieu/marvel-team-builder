@@ -202,7 +202,10 @@ input {
 
 @media screen and (max-width: 640px) {
   .signout {
-    top: 400px;
+    top: 100px;
+    right: 0px;
+    width: 100%;
+    border-radius: 0px 0px 10px 10px;
   }
 }
 .ui:hover {
