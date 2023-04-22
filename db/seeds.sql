@@ -19,7 +19,7 @@ CREATE TABLE Characters (
   image VARCHAR(255)
 );
 
-INSERT INTO users(username, password)
+INSERT INTO users(username, email, password)
 VALUES
   ("Sean", "password"),
   ("Anthony", "password");
