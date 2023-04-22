@@ -250,4 +250,9 @@ h1 {
 
 .charts-css.bar tbody tr td {
   flex-direction: column;
+}
+
+.image-main {
+  width: 400px;
+  height: 500px;
 }/*# sourceMappingURL=jass.css.map */
