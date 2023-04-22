@@ -44,6 +44,7 @@ nav {
 }
 
 h1 {
+    position: relative;
     width: 400px;
     background-color: var(--marvel);
     text-align: center;
@@ -54,6 +55,7 @@ h1 {
     font-weight: 900;
     font-family: var(--marvel_text);
     margin: 15px;
+    left: 25px;
     z-index: 2;
 }
 
@@ -102,12 +104,14 @@ a {
     }
 }
 
-@media screen and (max-width: 650px){
+@media screen and (max-width: 767px){
     .login_wrapper {
+        width: 60%;
         border-radius: 20px 20px 0px 0px !important;
         margin-bottom: 10px !important;
     }
     .signup_wrapper {
+        width: 60%;
         border-radius: 0px 0px 20px 20px !important;
         margin-bottom: 10px !important;
     }
@@ -123,7 +127,7 @@ a {
 }
 
 .form {
-    h3 {
+    h2 {
     color: var(--white);
     text-align: center;
     margin: 10px;
@@ -142,11 +146,17 @@ a {
 }
 
 .login_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: var(--off-black);
     border-radius: 50px 0px 0px 50px;
 }
 
 .signup_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: var(--off-black);
     border-radius: 0px 50px 50px 0px;
 }
@@ -157,12 +167,11 @@ a {
     align-items: center;
 }
 
-.input_group {
-    input {
-        border-radius: 25px;
-        margin: 5px;
-        text-align: center;
-    }
+
+input {
+    border-radius: 25px;
+    margin: 5px;
+    text-align: center;
 }
 
 .btn {
@@ -180,13 +189,17 @@ a {
 }
 
 .signout {
+    display: flex;
+    position: fixed;
+    top: 35px;
+    right: 50px;
     width: 125px;
     height: 40px;
     border: none;
+    justify-content: center;
     font-size: 1.8em;
     font-weight: bold;
-    padding-right: 20px;
-    border-radius: 15px 0px 0px 15px;
+    border-radius: 15px;
     background-color: var(--marvel);
 }
 
