@@ -7,7 +7,7 @@ const logout = async () => {
   });
 
   if (response.ok) {
-    document.location.replace("/");
+    document.location.replace("http://localhost:3001/");
   } else {
     alert(response.statusText);
   }
