@@ -58,6 +58,9 @@ h1 {
   left: 25px;
   z-index: 2;
 }
+h1 :hover {
+  color: var(--dark-grey);
+}
 
 a {
   text-decoration: none;
@@ -175,6 +178,7 @@ input {
   height: 30px;
   border-radius: 15px;
   margin-top: 20px;
+  background-color: var(--marvel);
   font-family: var(--marvel_text);
   font-size: 1.2em;
   padding: 0px 12px;
@@ -196,6 +200,11 @@ input {
   background-color: var(--marvel);
 }
 
+@media screen and (max-width: 640px) {
+  .signout {
+    top: 400px;
+  }
+}
 .ui:hover {
   box-shadow: var(--marvel) 2px 2px 8px;
 }
