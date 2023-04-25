@@ -11,19 +11,19 @@
 }
 
 body {
-  font-family: var(--marvel_text);
-  font-size: 14px;
-  color: var(--off-black);
-  padding: 0px;
-  margin: 0px;
-  box-sizing: border-box;
-  background: var(--dark-grey) center;
-  background-size: 100vw 100vh;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-width: 340px;
+    font-family: var(--marvel_text);
+    font-size: 14px;
+    color: var(--off-black);
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    background: var(--dark-grey) center;
+    background-size: 100vw 100vh;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 340px;
 }
 
 .form_wrapper {
@@ -57,6 +57,7 @@ h1 {
     margin: 15px;
     left: 25px;
     z-index: 2;
+
     :hover {
         color: var(--dark-grey);
     }
@@ -66,11 +67,12 @@ a {
     text-decoration: none;
 }
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 400px) {
     nav {
         display: flex;
         justify-content: center;
     }
+
     h1 {
         display: flex;
         align-content: center;
@@ -79,6 +81,7 @@ a {
         height: 50px;
         font-size: 1.8em;
     }
+
     .form {
         bottom: -50px
     }
@@ -93,13 +96,13 @@ a {
     z-index: 0;
 }
 
-@media screen and (max-width: 1200px){
+@media screen and (max-width: 1200px) {
     .background-image {
         display: none;
     }
 }
 
-@media screen and (max-width: 650px){
+@media screen and (max-width: 650px) {
     .form_wrapper {
         display: flex;
         flex-direction: column;
@@ -107,12 +110,13 @@ a {
     }
 }
 
-@media screen and (max-width: 767px){
+@media screen and (max-width: 767px) {
     .login_wrapper {
         width: 60%;
         border-radius: 20px 20px 0px 0px !important;
         margin-bottom: 10px !important;
     }
+
     .signup_wrapper {
         width: 60%;
         border-radius: 0px 0px 20px 20px !important;
@@ -131,10 +135,10 @@ a {
 
 .form {
     h2 {
-    color: var(--white);
-    text-align: center;
-    margin: 10px;
-    font-size: 2.5em;
+        color: var(--white);
+        text-align: center;
+        margin: 10px;
+        font-size: 2.5em;
     }
 }
 
@@ -207,7 +211,7 @@ input {
     background-color: var(--marvel);
 }
 
-@media screen and (max-width: 640px){
+@media screen and (max-width: 640px) {
     .signout {
         top: 100px;
         right: 0px;
@@ -221,6 +225,7 @@ input {
 .ui:hover {
     box-shadow: var(--marvel) 2px 2px 8px;
 }
+
 .ui:active {
     box-shadow: var(--off-white) 2px 2px 8px;
 }
@@ -236,7 +241,7 @@ input {
     margin: 20px;
     z-index: 1;
 
-    @media screen and (max-width: 950px){
+    @media screen and (max-width: 950px) {
         .characters-container {
             width: 100vw;
         }
@@ -279,14 +284,14 @@ input {
     height: 200px;
 }
 
-@media screen and (max-width: 1200px){
+@media screen and (max-width: 1200px) {
     .char-image {
         width: 100px;
         height: 150px;
     }
 }
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 400px) {
     .char-image {
         width: 50px;
         height: 100px;
@@ -295,6 +300,7 @@ input {
 
 .charts-css {
     border-radius: 15px;
+
     td {
         padding: 100px;
         margin: 5px;
