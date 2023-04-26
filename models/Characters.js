@@ -73,15 +73,6 @@ Characters.init(
   },
   // Define hooks that will run before creating a new Character
   {
-    // hooks: {
-    //   beforeCreate: async (newCharacterData) => {
-    //     newCharacterData.password = await bcrypt.hash(
-    //       newCharacterData.password,
-    //       10
-    //     );
-    //     return newCharacterData;
-    //   },
-    // },
     // Define the sequelize instance, and other options
     sequelize,
     timestamps: false,
